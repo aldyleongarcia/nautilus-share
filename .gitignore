@@ -12,8 +12,11 @@ POTFILES
 stamp-h1
 stamp-it
 libtool
+configure
 Makefile
+Makefile.in
 po/Makefile
+po/Makefile.in
 interfaces/Makefile
 src/.deps/
 src/.libs/
