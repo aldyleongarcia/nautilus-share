@@ -1,0 +1,4 @@
+# Allow all users to check Samba users updates without
+# requiring user authentication.
+
+ALL ALL=NOPASSWD: /usr/bin/pdbedit -L

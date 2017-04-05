@@ -1,0 +1,372 @@
+# Japanese translation for nautilus-share
+# Copyright (c) 2009 Rosetta Contributors and Canonical Ltd 2009
+# This file is distributed under the same license as the nautilus-share package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2009.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: nautilus-share\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-04-04 11:38-0400\n"
+"PO-Revision-Date: 2011-11-23 21:52+0900\n"
+"Last-Translator: Shushi Kurose <md81bird@hitaki.net>\n"
+"Language-Team: Japanese <gnome-translation@gnome.gr.jp>\n"
+"Language: ja\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Launchpad-Export-Date: 2011-11-23 12:40+0000\n"
+"X-Generator: Launchpad (build 14336)\n"
+
+#: ../src/installSamba.c:55
+msgid "Restart your session"
+msgstr "セッションを再起動してください"
+
+#: ../src/installSamba.c:58
+msgid "You need to restart your session in order to enable sharing."
+msgstr "共有を有効化するため、セッションを再起動する必要があります。"
+
+#: ../src/installSamba.c:59
+msgid "Restart session"
+msgstr "セッションを再起動"
+
+#: ../src/installSamba.c:163
+msgid "Sharing service installation failed"
+msgstr "共有サービスのインストールに失敗しました"
+
+#: ../src/installSamba.c:167
+msgid ""
+"Sharing service installation has failed. Would you like to retry the "
+"installation?"
+msgstr ""
+"共有サービスのインストールに失敗しました。インストールを再試行しますか?"
+
+#: ../src/installSamba.c:171
+msgid "Retry"
+msgstr "再実行"
+
+#: ../src/installSamba.c:207
+msgid "Sharing service is not installed"
+msgstr "共有サービスがインストールされていません"
+
+#: ../src/installSamba.c:209
+msgid ""
+"You need to install the Windows networks sharing service in order to share "
+"your folders."
+msgstr ""
+"フォルダーを共有するために、Windows ネットワーク共有サービスをインストールす"
+"る必要があります。"
+
+#: ../src/installSamba.c:211
+msgid "Install service"
+msgstr "サービスのインストール"
+
+#: ../src/nautilus-extension.c:41
+msgid "Folder Sharing"
+msgstr "フォルダーの共有"
+
+#: ../src/nautilus-extension.c:83
+#, fuzzy
+msgid "Share with Windows users"
+msgstr "このフォルダーを共有する"
+
+#: ../src/nautilus-extension.c:84
+msgid "Share this Folder"
+msgstr "このフォルダーを共有する"
+
+#: ../src/nautilus-permissions.c:186
+#, c-format
+msgid "Could not change the permissions of folder \"%s\""
+msgstr "フォルダー \"%s\" のアクセス権を変更できませんでした"
+
+#: ../src/nautilus-permissions.c:214
+#, c-format
+msgid ""
+"Nautilus needs to add some permissions to your folder \"%s\" in order to "
+"share it"
+msgstr ""
+"共有するには、フォルダー \"%s\" に一部のアクセス権を付与する必要があります"
+
+#: ../src/nautilus-permissions.c:220
+#, c-format
+msgid ""
+"The folder \"%s\" needs the following extra permissions for sharing to "
+"work:\n"
+"%s%s%sDo you want Nautilus to add these permissions to the folder "
+"automatically?"
+msgstr ""
+"フォルダー \"%s\" を共有するには、以下のアクセス権を付与する必要があります:\n"
+"%s%s%sNautilus を使って、フォルダーにこれらのアクセス権を自動的に付与します"
+"か？"
+
+#: ../src/nautilus-permissions.c:225
+#, fuzzy
+msgid "  - read permission by group/other\n"
+msgstr "  - 他のユーザーによる読み込み権限\n"
+
+#: ../src/nautilus-permissions.c:227
+#, fuzzy
+msgid "  - write permission by group/other\n"
+msgstr "  - 他のユーザーによる書き込み権限\n"
+
+#: ../src/nautilus-permissions.c:229
+#, fuzzy
+msgid "  - execute permission by group/other\n"
+msgstr "  - 他のユーザーによる実行権限\n"
+
+#: ../src/nautilus-permissions.c:233
+msgid "Add the permissions automatically"
+msgstr "自動的にアクセス権を付加する"
+
+#: ../src/property-page.c:56
+#, c-format
+msgid "The user %s has not registered to the Samba Server."
+msgstr ""
+
+#: ../src/property-page.c:61
+#, c-format
+msgid ""
+" Ask your administrator to add new user to the Samba Server. \n"
+" \n"
+" <b> Suggestion: </b> sudo smbpasswd -a <i><b>%s</b></i>   \n"
+" \n"
+" %s"
+msgstr ""
+
+#: ../src/property-page.c:63 ../src/property-page.c:91
+#: ../src/property-page.c:120
+msgid ""
+"<b> Always restart the user session after performing one of these actions.</"
+"b> "
+msgstr ""
+
+#: ../src/property-page.c:83
+#, c-format
+msgid "Permission denied for %s."
+msgstr ""
+
+#: ../src/property-page.c:88
+#, c-format
+msgid ""
+"You do not have permission to create a usershare. \n"
+"\n"
+" %s \n"
+"\n"
+" %s %s \n"
+"\n"
+" %s"
+msgstr ""
+
+#: ../src/property-page.c:89 ../src/property-page.c:109
+msgid ""
+"Ask your administrator to grant you permissions to create a shared folder."
+msgstr ""
+
+#: ../src/property-page.c:90
+msgid ""
+"<b>Suggestion:</b> \n"
+" sudo usermod -a -G sambashare "
+msgstr ""
+
+#: ../src/property-page.c:114
+#, c-format
+msgid ""
+"Instructions for sharing directories with Nautilus-Share. \n"
+"\n"
+"%s \n"
+"%s \n"
+"\n"
+"%s \n"
+"%s \n"
+"\n"
+"%s \n"
+"%s"
+msgstr ""
+
+#: ../src/property-page.c:116
+msgid "<b>Add new user to SAMBA server:</b>"
+msgstr ""
+
+#: ../src/property-page.c:117
+msgid "    sudo smbpasswd -a <i>your_username</i>"
+msgstr ""
+
+#: ../src/property-page.c:118
+msgid "<b>Add new user to sambashare group:</b>"
+msgstr ""
+
+#: ../src/property-page.c:119
+msgid "    sudo usermod -a -G sambashare  <i>your_username</i> "
+msgstr ""
+
+#: ../src/property-page.c:121
+msgid ""
+"<big>Sharing with guest users without a password is available \n"
+" if specified in the Samba configuration.</big> "
+msgstr ""
+
+#: ../src/property-page.c:478
+#, fuzzy
+msgid "Share users"
+msgstr "このフォルダーを共有する"
+
+#: ../src/property-page.c:490
+msgid "Can write?"
+msgstr ""
+
+#. Apply button
+#: ../src/property-page.c:689 ../src/property-page.c:1156
+msgid "Modify _Share"
+msgstr "共有を変更(_S)"
+
+#. Apply button
+#: ../src/property-page.c:689 ../src/property-page.c:1170
+msgid "Create _Share"
+msgstr "共有を作成(_S)"
+
+#: ../src/property-page.c:735
+msgid "The share name cannot be empty"
+msgstr "共有名を空白にできません"
+
+#: ../src/property-page.c:743
+msgid "Very long name to maintain compatibility  between systems."
+msgstr ""
+
+#: ../src/property-page.c:763
+#, c-format
+msgid "Error while getting share information: %s"
+msgstr "共有情報の取得中にエラー: %s"
+
+#: ../src/property-page.c:776
+msgid "Another share has the same name"
+msgstr "同じ名前の共有が存在します"
+
+#: ../src/property-page.c:1051
+msgid "There was an error while getting the sharing information"
+msgstr "共有情報の取得中にエラーが発生しました"
+
+#: ../src/property-page.c:1317
+msgid "Local Network Share"
+msgstr ""
+
+#: ../src/shares.c:46
+msgid "guest"
+msgstr ""
+
+#: ../src/shares.c:145
+#, c-format
+msgid "%s %s %s returned with signal %d"
+msgstr "%s %s %s はシグナル %d を返しました"
+
+#: ../src/shares.c:154
+#, c-format
+msgid "%s %s %s failed for an unknown reason"
+msgstr "%s %s %s 不明な理由により失敗しました"
+
+#: ../src/shares.c:174
+#, c-format
+msgid "'net usershare' returned error %d: %s"
+msgstr "'net usershare' がエラー %d を返しました: %s"
+
+#: ../src/shares.c:176
+#, c-format
+msgid "'net usershare' returned error %d"
+msgstr "'net usershare' がエラー %d を返しました"
+
+#: ../src/shares.c:210
+#, c-format
+msgid "the output of 'net usershare' is not in valid UTF-8 encoding"
+msgstr "'net usershare' の出力は、有効なUTF-8エンコードではありません"
+
+#: ../src/shares.c:460
+msgid "Not valid user"
+msgstr ""
+
+#: ../src/shares.c:586 ../src/shares.c:743
+#, c-format
+msgid "Failed"
+msgstr "失敗"
+
+#: ../src/shares.c:676
+#, c-format
+msgid "Samba's testparm returned with signal %d"
+msgstr "Samba の testparm がシグナル %d を返しました"
+
+#: ../src/shares.c:682
+#, c-format
+msgid "Samba's testparm failed for an unknown reason"
+msgstr "Samba の testparm が不明な理由により失敗しました"
+
+#: ../src/shares.c:697
+#, c-format
+msgid "Samba's testparm returned error %d: %s"
+msgstr "Samba の testparm がエラー %d を返しました: %s"
+
+#: ../src/shares.c:699
+#, c-format
+msgid "Samba's testparm returned error %d"
+msgstr "Samba の testparm がエラー %d を返しました"
+
+#: ../src/shares.c:850
+#, c-format
+msgid "Cannot remove the share for path %s: that path is not shared"
+msgstr "パス %s の共有を削除できません: このパスは共有されていません"
+
+#: ../src/shares.c:895
+#, c-format
+msgid ""
+"Cannot change the path of an existing share; please remove the old share "
+"first and add a new one"
+msgstr ""
+"既存の共有のパスは変更できません。まず古い共有を削除してから、新しい共有を追"
+"加してください"
+
+#: ../interfaces/share-dialog.ui.h:1
+#, fuzzy
+msgid "<big><b>_Share this Directory</b></big>"
+msgstr "<big><b>フォルダーの共有</b></big>"
+
+#: ../interfaces/share-dialog.ui.h:2
+#, fuzzy
+msgid "Shared Directory _Name:"
+msgstr "共有名(_N):"
+
+#: ../interfaces/share-dialog.ui.h:3
+msgid "Select a user from the list."
+msgstr ""
+
+#: ../interfaces/share-dialog.ui.h:4
+msgid "Add a user from the list."
+msgstr ""
+
+#: ../interfaces/share-dialog.ui.h:5
+msgid "Delete a user from the list."
+msgstr ""
+
+#: ../interfaces/share-dialog.ui.h:6
+msgid "Information to users."
+msgstr ""
+
+#: ../interfaces/share-dialog.ui.h:7
+#, fuzzy
+msgid "_Comment"
+msgstr "コメント(_M):"
+
+#~ msgid "Share name is too long"
+#~ msgstr "共有名が長すぎます"
+
+#~ msgid "Share"
+#~ msgstr "共有"
+
+#~ msgid "Sharing Options"
+#~ msgstr "共有のオプション"
+
+#~ msgid "Share this _folder"
+#~ msgstr "このフォルダーを共有する(_F)"
+
+#~ msgid "_Allow others to create and delete files in this folder"
+#~ msgstr ""
+#~ "このフォルダー内でのファイルの作成・削除を他のユーザーに許可する(_A)"
+
+#~ msgid "_Guest access (for people without a user account)"
+#~ msgstr "ゲストによるアクセス (ユーザーアカウントを持たない人向け) (_G)"

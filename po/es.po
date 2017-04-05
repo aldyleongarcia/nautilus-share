@@ -1,0 +1,380 @@
+# translation of nautilus-share.HEAD.po to Español
+# translation of nautilus-share to spanish
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+#
+# Jorge González <jorgegonz@svn.gnome.org>, 2007, 200, 2009.
+msgid ""
+msgstr ""
+"Project-Id-Version: nautilus-share.HEAD\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-04-04 11:38-0400\n"
+"PO-Revision-Date: 2017-04-04 11:36-0400\n"
+"Last-Translator: Aldy León García <algarcia@estudiantes.uci.cu>\n"
+"Language-Team: Español <gnome-es-list@gnome.org>\n"
+"Language: es\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8.7.1\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: ../src/installSamba.c:55
+msgid "Restart your session"
+msgstr "Reiniciar su sesión"
+
+#: ../src/installSamba.c:58
+msgid "You need to restart your session in order to enable sharing."
+msgstr "Debes  reiniciar tu sesión para poder compartir directorios."
+
+#: ../src/installSamba.c:59
+msgid "Restart session"
+msgstr "Reiniciar su sesión"
+
+#: ../src/installSamba.c:163
+msgid "Sharing service installation failed"
+msgstr "Ha fallado la instalación del servicio para compartir"
+
+#: ../src/installSamba.c:167
+msgid ""
+"Sharing service installation has failed. Would you like to retry the "
+"installation?"
+msgstr ""
+"Ha fallado la instalación del servicio para compartir.  ¿Desearía reintentar "
+"la instalación?"
+
+#: ../src/installSamba.c:171
+msgid "Retry"
+msgstr "Reintentar"
+
+#: ../src/installSamba.c:207
+msgid "Sharing service is not installed"
+msgstr "Servicio para compartir directorios  no está instalado"
+
+#: ../src/installSamba.c:209
+msgid ""
+"You need to install the Windows networks sharing service in order to share "
+"your folders."
+msgstr ""
+"Necesitas instalar el servicio para compartir directorios con Windows para "
+"poder compartir tus directorios. "
+
+#: ../src/installSamba.c:211
+msgid "Install service"
+msgstr "Instalar servicio"
+
+#: ../src/nautilus-extension.c:41
+msgid "Folder Sharing"
+msgstr "Compartición de carpetas"
+
+#: ../src/nautilus-extension.c:83
+msgid "Share with Windows users"
+msgstr "Compartir con usuarios Windows"
+
+#: ../src/nautilus-extension.c:84
+msgid "Share this Folder"
+msgstr "Compartir esta carpeta"
+
+#: ../src/nautilus-permissions.c:186
+#, c-format
+msgid "Could not change the permissions of folder \"%s\""
+msgstr "No se pudo cambiar los permisos de la carpeta «%s»"
+
+#: ../src/nautilus-permissions.c:214
+#, c-format
+msgid ""
+"Nautilus needs to add some permissions to your folder \"%s\" in order to "
+"share it"
+msgstr ""
+"Nautilus necesita añadir algunos permisos a su carpeta «%s» para poder "
+"compartirla"
+
+#: ../src/nautilus-permissions.c:220
+#, c-format
+msgid ""
+"The folder \"%s\" needs the following extra permissions for sharing to "
+"work:\n"
+"%s%s%sDo you want Nautilus to add these permissions to the folder "
+"automatically?"
+msgstr ""
+"La carpeta «%s» necesita los siguientes permisos adicionales para poder "
+"compartirla:\n"
+"%s%s%s¿Quiere que Nautilus añada automáticamente estos permisos a la carpeta?"
+
+#: ../src/nautilus-permissions.c:225
+msgid "  - read permission by group/other\n"
+msgstr "  - permisos de lectura para otros grupos\n"
+
+#: ../src/nautilus-permissions.c:227
+msgid "  - write permission by group/other\n"
+msgstr "  - permisos de escritura  para otros grupos\n"
+
+#: ../src/nautilus-permissions.c:229
+msgid "  - execute permission by group/other\n"
+msgstr "  - permisos de ejecución  para otros grupos\n"
+
+#: ../src/nautilus-permissions.c:233
+msgid "Add the permissions automatically"
+msgstr "Añadir los permisos automáticamente"
+
+#: ../src/property-page.c:56
+#, c-format
+msgid "The user %s has not registered to the Samba Server."
+msgstr "El usuario %s no se ha registrado en el Servidor Samba."
+
+#: ../src/property-page.c:61
+#, c-format
+msgid ""
+" Ask your administrator to add new user to the Samba Server. \n"
+" \n"
+" <b> Suggestion: </b> sudo smbpasswd -a <i><b>%s</b></i>   \n"
+" \n"
+" %s"
+msgstr ""
+"Solicite a su administrador que añada nuevos usuarios  al Servidor Samba. \n"
+"\n"
+"<b>Sugerencia:</b>   sudo smbpasswd -a <i><b>%s</b></i>  \n"
+" \n"
+" %s"
+
+#: ../src/property-page.c:63 ../src/property-page.c:91
+#: ../src/property-page.c:120
+msgid ""
+"<b> Always restart the user session after performing one of these actions.</"
+"b> "
+msgstr ""
+"<b> Siempre después de realizar una de estas acciones debes reiniciar su "
+"sesión.</b> "
+
+#: ../src/property-page.c:83
+#, c-format
+msgid "Permission denied for %s."
+msgstr "Permiso denegado para %s."
+
+#: ../src/property-page.c:88
+#, c-format
+msgid ""
+"You do not have permission to create a usershare. \n"
+"\n"
+" %s \n"
+"\n"
+" %s %s \n"
+"\n"
+" %s"
+msgstr ""
+"No tienes permisos para compartir. \n"
+"\n"
+" %s \n"
+"\n"
+" %s %s \n"
+"\n"
+" %s"
+
+#: ../src/property-page.c:89 ../src/property-page.c:109
+msgid ""
+"Ask your administrator to grant you permissions to create a shared folder."
+msgstr ""
+"Solicite a su administrador permisos para crear un directorio compartido."
+
+#: ../src/property-page.c:90
+msgid ""
+"<b>Suggestion:</b> \n"
+" sudo usermod -a -G sambashare "
+msgstr ""
+"<b>Sugerencia:</b> \n"
+" sudo usermod -a -G sambashare "
+
+#: ../src/property-page.c:114
+#, c-format
+msgid ""
+"Instructions for sharing directories with Nautilus-Share. \n"
+"\n"
+"%s \n"
+"%s \n"
+"\n"
+"%s \n"
+"%s \n"
+"\n"
+"%s \n"
+"%s"
+msgstr ""
+"Instrucciones para compartir directorios con Nautilus-Share. \n"
+"\n"
+"%s \n"
+"%s \n"
+"\n"
+"%s \n"
+"%s \n"
+"\n"
+"%s \n"
+"%s"
+
+#: ../src/property-page.c:116
+msgid "<b>Add new user to SAMBA server:</b>"
+msgstr "<b>Añadir nuevo usuario al servidor SAMBA:</b>"
+
+#: ../src/property-page.c:117
+msgid "    sudo smbpasswd -a <i>your_username</i>"
+msgstr "    sudo smbpasswd -a <i>su_usuario</i>"
+
+#: ../src/property-page.c:118
+msgid "<b>Add new user to sambashare group:</b>"
+msgstr "<b>Añadir nuevo usuario al grupo sambashare:</b>"
+
+#: ../src/property-page.c:119
+msgid "    sudo usermod -a -G sambashare  <i>your_username</i> "
+msgstr "    sudo usermod -a -G sambashare  <i>su_usuario</i> "
+
+#: ../src/property-page.c:121
+msgid ""
+"<big>Sharing with guest users without a password is available \n"
+" if specified in the Samba configuration.</big> "
+msgstr ""
+"<big>Compartir con usuarios sin autenticación es posible si \n"
+"es declarado la configuración de SAMBA.</big> "
+
+#: ../src/property-page.c:478
+msgid "Share users"
+msgstr "Usuarios para compartir"
+
+#: ../src/property-page.c:490
+msgid "Can write?"
+msgstr "¿Puede escribir?"
+
+#. Apply button
+#: ../src/property-page.c:689 ../src/property-page.c:1156
+msgid "Modify _Share"
+msgstr "_Modificar compartido"
+
+#. Apply button
+#: ../src/property-page.c:689 ../src/property-page.c:1170
+msgid "Create _Share"
+msgstr "C_rear compartido"
+
+#: ../src/property-page.c:735
+msgid "The share name cannot be empty"
+msgstr "El nombre compartido no puede estar vacío"
+
+#: ../src/property-page.c:743
+msgid "Very long name to maintain compatibility  between systems."
+msgstr "Nombre muy largo para mantener la compatibilidad entre sistemas."
+
+#: ../src/property-page.c:763
+#, c-format
+msgid "Error while getting share information: %s"
+msgstr "Error al obtener la información de compartición: %s"
+
+#: ../src/property-page.c:776
+msgid "Another share has the same name"
+msgstr "Otro compartido tiene el mismo nombre"
+
+#: ../src/property-page.c:1051
+msgid "There was an error while getting the sharing information"
+msgstr "Hubo un error al obtener la información de compartición"
+
+#: ../src/property-page.c:1317
+msgid "Local Network Share"
+msgstr "Compartir en red local."
+
+#: ../src/shares.c:46
+msgid "guest"
+msgstr "invitado"
+
+#: ../src/shares.c:145
+#, c-format
+msgid "%s %s %s returned with signal %d"
+msgstr "se devolvió %s %s %s con la señal %d"
+
+#: ../src/shares.c:154
+#, c-format
+msgid "%s %s %s failed for an unknown reason"
+msgstr "%s %s %s falló por una razón desconocida"
+
+#: ../src/shares.c:174
+#, c-format
+msgid "'net usershare' returned error %d: %s"
+msgstr "«net usershare» devolvió el error %d: %s"
+
+#: ../src/shares.c:176
+#, c-format
+msgid "'net usershare' returned error %d"
+msgstr "«net usershare» devolvió el error %d"
+
+#: ../src/shares.c:210
+#, c-format
+msgid "the output of 'net usershare' is not in valid UTF-8 encoding"
+msgstr "la salida de «net usershare» no está codificada en UTF-8"
+
+#: ../src/shares.c:460
+msgid "Not valid user"
+msgstr "Usuario inválido"
+
+#: ../src/shares.c:586 ../src/shares.c:743
+#, c-format
+msgid "Failed"
+msgstr "Fallado"
+
+#: ../src/shares.c:676
+#, c-format
+msgid "Samba's testparm returned with signal %d"
+msgstr "Se devolvió el parámetro de prueba de Samba con la señal %d"
+
+#: ../src/shares.c:682
+#, c-format
+msgid "Samba's testparm failed for an unknown reason"
+msgstr "El parámetro de prueba de Samba falló por una razón desconocida"
+
+#: ../src/shares.c:697
+#, c-format
+msgid "Samba's testparm returned error %d: %s"
+msgstr "El parámetro de prueba de Samba devolvió el error %d: %s"
+
+#: ../src/shares.c:699
+#, c-format
+msgid "Samba's testparm returned error %d"
+msgstr "El parámetro de prueba de Samba devolvió el error %d"
+
+#: ../src/shares.c:850
+#, c-format
+msgid "Cannot remove the share for path %s: that path is not shared"
+msgstr ""
+"No se puede quitar la compartición para la ruta %s: esa ruta no está "
+"compartida"
+
+#: ../src/shares.c:895
+#, c-format
+msgid ""
+"Cannot change the path of an existing share; please remove the old share "
+"first and add a new one"
+msgstr ""
+"No se puede cambiar la ruta de una compartición existente; elimine la "
+"compartición antigua primero y añada una nueva"
+
+#: ../interfaces/share-dialog.ui.h:1
+msgid "<big><b>_Share this Directory</b></big>"
+msgstr "<big><b>Compartir este Directorio</b></big>"
+
+#: ../interfaces/share-dialog.ui.h:2
+msgid "Shared Directory _Name:"
+msgstr "_Nombre del directorio compartido:"
+
+#: ../interfaces/share-dialog.ui.h:3
+msgid "Select a user from the list."
+msgstr "Selecciona un usuario de la lista."
+
+#: ../interfaces/share-dialog.ui.h:4
+msgid "Add a user from the list."
+msgstr "Adiciona un usuario de la lista."
+
+#: ../interfaces/share-dialog.ui.h:5
+msgid "Delete a user from the list."
+msgstr "Elimina un usuario de la lista."
+
+#: ../interfaces/share-dialog.ui.h:6
+msgid "Information to users."
+msgstr "Información a los usuarios."
+
+#: ../interfaces/share-dialog.ui.h:7
+msgid "_Comment"
+msgstr "Co_mentario:"
+

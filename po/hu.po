@@ -1,0 +1,372 @@
+# Hungarian translation of nautilus-share
+# Copyright 2009. Free Software Foundation, Inc.
+# This file is distributed under the same license as the nautilus-share package.
+#
+# Keresztes Ákos <xsak at c2 dot hu>, 2006.
+# Kalman Kemenczy <kkemenczy at novell dot com>, 2006, 2007.
+# Gabor Kelemen <kelemeng at gnome dot hu>, 2007, 2009.
+msgid ""
+msgstr ""
+"Project-Id-Version: nautilus-share master\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-04-04 11:38-0400\n"
+"PO-Revision-Date: 2009-08-15 02:24+0200\n"
+"Last-Translator: Gabor Kelemen <kelemeng at gnome dot hu>\n"
+"Language-Team: Hungarian <gnome at fsf dot hu>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 1.11.4\n"
+"Plural-Forms:  nplurals=2; plural=(n != 1);\n"
+
+#: ../src/installSamba.c:55
+msgid "Restart your session"
+msgstr ""
+
+#: ../src/installSamba.c:58
+msgid "You need to restart your session in order to enable sharing."
+msgstr ""
+
+#: ../src/installSamba.c:59
+msgid "Restart session"
+msgstr ""
+
+#: ../src/installSamba.c:163
+msgid "Sharing service installation failed"
+msgstr ""
+
+#: ../src/installSamba.c:167
+msgid ""
+"Sharing service installation has failed. Would you like to retry the "
+"installation?"
+msgstr ""
+
+#: ../src/installSamba.c:171
+msgid "Retry"
+msgstr ""
+
+#: ../src/installSamba.c:207
+msgid "Sharing service is not installed"
+msgstr ""
+
+#: ../src/installSamba.c:209
+msgid ""
+"You need to install the Windows networks sharing service in order to share "
+"your folders."
+msgstr ""
+
+#: ../src/installSamba.c:211
+msgid "Install service"
+msgstr ""
+
+#: ../src/nautilus-extension.c:41
+msgid "Folder Sharing"
+msgstr "Mappamegosztás"
+
+#: ../src/nautilus-extension.c:83
+#, fuzzy
+msgid "Share with Windows users"
+msgstr "Könyvtár megosztása"
+
+#: ../src/nautilus-extension.c:84
+msgid "Share this Folder"
+msgstr "Könyvtár megosztása"
+
+#: ../src/nautilus-permissions.c:186
+#, c-format
+msgid "Could not change the permissions of folder \"%s\""
+msgstr "A(z) „%s” mappa jogosultságainak megváltoztatása nem sikerült"
+
+#: ../src/nautilus-permissions.c:214
+#, c-format
+msgid ""
+"Nautilus needs to add some permissions to your folder \"%s\" in order to "
+"share it"
+msgstr ""
+"A megosztáshoz a Nautilusnak fel kell vennie néhány jogosultságot a "
+"következő mappához: „%s”"
+
+#: ../src/nautilus-permissions.c:220
+#, c-format
+msgid ""
+"The folder \"%s\" needs the following extra permissions for sharing to "
+"work:\n"
+"%s%s%sDo you want Nautilus to add these permissions to the folder "
+"automatically?"
+msgstr ""
+"A megosztáshoz a következő jogokat kell felvenni a(z) „%s” mappához:\n"
+"%s%s%s Kívánja, hogy a Nautilus automatikusan hozzáadja a szükséges jogokat "
+"a mappához?"
+
+#: ../src/nautilus-permissions.c:225
+#, fuzzy
+msgid "  - read permission by group/other\n"
+msgstr "  - olvasási jogosultság mások számára\n"
+
+#: ../src/nautilus-permissions.c:227
+#, fuzzy
+msgid "  - write permission by group/other\n"
+msgstr "  - írási jogosultság mások számára\n"
+
+#: ../src/nautilus-permissions.c:229
+#, fuzzy
+msgid "  - execute permission by group/other\n"
+msgstr "  - végrehajtási jogosultság mások számára\n"
+
+#: ../src/nautilus-permissions.c:233
+msgid "Add the permissions automatically"
+msgstr "Jogosultságok automatikus felvétele"
+
+#: ../src/property-page.c:56
+#, c-format
+msgid "The user %s has not registered to the Samba Server."
+msgstr ""
+
+#: ../src/property-page.c:61
+#, c-format
+msgid ""
+" Ask your administrator to add new user to the Samba Server. \n"
+" \n"
+" <b> Suggestion: </b> sudo smbpasswd -a <i><b>%s</b></i>   \n"
+" \n"
+" %s"
+msgstr ""
+
+#: ../src/property-page.c:63 ../src/property-page.c:91
+#: ../src/property-page.c:120
+msgid ""
+"<b> Always restart the user session after performing one of these actions.</"
+"b> "
+msgstr ""
+
+#: ../src/property-page.c:83
+#, c-format
+msgid "Permission denied for %s."
+msgstr ""
+
+#: ../src/property-page.c:88
+#, c-format
+msgid ""
+"You do not have permission to create a usershare. \n"
+"\n"
+" %s \n"
+"\n"
+" %s %s \n"
+"\n"
+" %s"
+msgstr ""
+
+#: ../src/property-page.c:89 ../src/property-page.c:109
+msgid ""
+"Ask your administrator to grant you permissions to create a shared folder."
+msgstr ""
+
+#: ../src/property-page.c:90
+msgid ""
+"<b>Suggestion:</b> \n"
+" sudo usermod -a -G sambashare "
+msgstr ""
+
+#: ../src/property-page.c:114
+#, c-format
+msgid ""
+"Instructions for sharing directories with Nautilus-Share. \n"
+"\n"
+"%s \n"
+"%s \n"
+"\n"
+"%s \n"
+"%s \n"
+"\n"
+"%s \n"
+"%s"
+msgstr ""
+
+#: ../src/property-page.c:116
+msgid "<b>Add new user to SAMBA server:</b>"
+msgstr ""
+
+#: ../src/property-page.c:117
+msgid "    sudo smbpasswd -a <i>your_username</i>"
+msgstr ""
+
+#: ../src/property-page.c:118
+msgid "<b>Add new user to sambashare group:</b>"
+msgstr ""
+
+#: ../src/property-page.c:119
+msgid "    sudo usermod -a -G sambashare  <i>your_username</i> "
+msgstr ""
+
+#: ../src/property-page.c:121
+msgid ""
+"<big>Sharing with guest users without a password is available \n"
+" if specified in the Samba configuration.</big> "
+msgstr ""
+
+#: ../src/property-page.c:478
+#, fuzzy
+msgid "Share users"
+msgstr "Könyvtár megosztása"
+
+#: ../src/property-page.c:490
+msgid "Can write?"
+msgstr ""
+
+#. Apply button
+#: ../src/property-page.c:689 ../src/property-page.c:1156
+msgid "Modify _Share"
+msgstr "Mó_dosítás"
+
+#. Apply button
+#: ../src/property-page.c:689 ../src/property-page.c:1170
+msgid "Create _Share"
+msgstr "_Megosztás"
+
+#: ../src/property-page.c:735
+msgid "The share name cannot be empty"
+msgstr "A megosztás neve nem lehet üres"
+
+#: ../src/property-page.c:743
+msgid "Very long name to maintain compatibility  between systems."
+msgstr ""
+
+#: ../src/property-page.c:763
+#, c-format
+msgid "Error while getting share information: %s"
+msgstr "Hiba történt a megosztás információinak lekérdezése közben: %s"
+
+#: ../src/property-page.c:776
+msgid "Another share has the same name"
+msgstr "Egy másik megosztásnak ugyanez a neve"
+
+#: ../src/property-page.c:1051
+msgid "There was an error while getting the sharing information"
+msgstr "Hiba történt a megosztás információinak lekérdezése közben"
+
+#: ../src/property-page.c:1317
+msgid "Local Network Share"
+msgstr ""
+
+#: ../src/shares.c:46
+msgid "guest"
+msgstr ""
+
+#: ../src/shares.c:145
+#, c-format
+msgid "%s %s %s returned with signal %d"
+msgstr "%s %s %s a következő szignált adta vissza: %d"
+
+#: ../src/shares.c:154
+#, c-format
+msgid "%s %s %s failed for an unknown reason"
+msgstr "%s %s %s ismeretlen okból sikertelen"
+
+#: ../src/shares.c:174
+#, c-format
+msgid "'net usershare' returned error %d: %s"
+msgstr "A „net usershare” a következő hibát adta vissza: %d: %s"
+
+#: ../src/shares.c:176
+#, c-format
+msgid "'net usershare' returned error %d"
+msgstr "A „net usershare” a következő hibát adta vissza: %d"
+
+#: ../src/shares.c:210
+#, c-format
+msgid "the output of 'net usershare' is not in valid UTF-8 encoding"
+msgstr "A „net usershare” kimenete nem UTF-8 kódolású"
+
+#: ../src/shares.c:460
+msgid "Not valid user"
+msgstr ""
+
+#: ../src/shares.c:586 ../src/shares.c:743
+#, c-format
+msgid "Failed"
+msgstr "Sikertelen"
+
+#: ../src/shares.c:676
+#, c-format
+msgid "Samba's testparm returned with signal %d"
+msgstr "A Samba testparm parancsa a következő szignállal tért vissza: %d"
+
+#: ../src/shares.c:682
+#, c-format
+msgid "Samba's testparm failed for an unknown reason"
+msgstr "A Samba testparm parancsa ismeretlen okból nem futott le"
+
+#: ../src/shares.c:697
+#, c-format
+msgid "Samba's testparm returned error %d: %s"
+msgstr "A Samba testparm parancsa a következő hibával tért vissza: %d: %s"
+
+#: ../src/shares.c:699
+#, c-format
+msgid "Samba's testparm returned error %d"
+msgstr "A Samba testparm parancsa a következő hibával tért vissza: %d"
+
+#: ../src/shares.c:850
+#, c-format
+msgid "Cannot remove the share for path %s: that path is not shared"
+msgstr ""
+"A megosztás nem vonható vissza a megadott útvonalról (%s), mert az jelenleg "
+"nem megosztott"
+
+#: ../src/shares.c:895
+#, c-format
+msgid ""
+"Cannot change the path of an existing share; please remove the old share "
+"first and add a new one"
+msgstr ""
+"A megosztás útvonala nem változtatható meg, először vonja vissza a megosztást"
+
+#: ../interfaces/share-dialog.ui.h:1
+#, fuzzy
+msgid "<big><b>_Share this Directory</b></big>"
+msgstr "<big><b>Mappa megosztása</b></big>"
+
+#: ../interfaces/share-dialog.ui.h:2
+#, fuzzy
+msgid "Shared Directory _Name:"
+msgstr "M_egosztás neve:"
+
+#: ../interfaces/share-dialog.ui.h:3
+msgid "Select a user from the list."
+msgstr ""
+
+#: ../interfaces/share-dialog.ui.h:4
+msgid "Add a user from the list."
+msgstr ""
+
+#: ../interfaces/share-dialog.ui.h:5
+msgid "Delete a user from the list."
+msgstr ""
+
+#: ../interfaces/share-dialog.ui.h:6
+msgid "Information to users."
+msgstr ""
+
+#: ../interfaces/share-dialog.ui.h:7
+#, fuzzy
+msgid "_Comment"
+msgstr "Meg_jegyzés:"
+
+#~ msgid "Share name is too long"
+#~ msgstr "A megosztás neve túl hosszú"
+
+#~ msgid "Share"
+#~ msgstr "Megosztás"
+
+#~ msgid "Sharing Options"
+#~ msgstr "Megosztás beállításai"
+
+#~ msgid "Share this _folder"
+#~ msgstr "_Mappa megosztása"
+
+#~ msgid "_Allow others to create and delete files in this folder"
+#~ msgstr "Mások létrehozhatnak fájlokat a m_appában és törölhetnek innen"
+
+#~ msgid "_Guest access (for people without a user account)"
+#~ msgstr "_Vendéghozzáférés (felhasználói fiók nélküli személyeknek)"

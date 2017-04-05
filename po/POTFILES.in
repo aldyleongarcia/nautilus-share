@@ -1,0 +1,9 @@
+src/installSamba.c
+src/nautilus-extension.c
+src/nautilus-permissions.c
+src/property-page.c
+src/shares.c
+[type: gettext/glade]interfaces/share-dialog.ui
+
+
+

@@ -1,0 +1,368 @@
+# translation of nautilus-share.master.te.po to Telugu
+# Telugu translation of nautilus-share.
+# Copyright (C) 2009 nautilus-share's COPYRIGHT HOLDER
+# This file is distributed under the same license as the nautilus-share package.
+#
+# Krishna Babu K <kkrothap@redhat.com>, 2009.
+msgid ""
+msgstr ""
+"Project-Id-Version: nautilus-share.master.te\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-04-04 11:38-0400\n"
+"PO-Revision-Date: 2009-10-27 19:11+0530\n"
+"Last-Translator: Krishna Babu K <kkrothap@redhat.com>\n"
+"Language-Team: Telugu <en@li.org>\n"
+"Language: te\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 1.11.4\n"
+"Plural-Forms: nplurals=2; plural=(n!=1);\n"
+"\n"
+"\n"
+
+#: ../src/installSamba.c:55
+msgid "Restart your session"
+msgstr ""
+
+#: ../src/installSamba.c:58
+msgid "You need to restart your session in order to enable sharing."
+msgstr ""
+
+#: ../src/installSamba.c:59
+msgid "Restart session"
+msgstr ""
+
+#: ../src/installSamba.c:163
+msgid "Sharing service installation failed"
+msgstr ""
+
+#: ../src/installSamba.c:167
+msgid ""
+"Sharing service installation has failed. Would you like to retry the "
+"installation?"
+msgstr ""
+
+#: ../src/installSamba.c:171
+msgid "Retry"
+msgstr ""
+
+#: ../src/installSamba.c:207
+msgid "Sharing service is not installed"
+msgstr ""
+
+#: ../src/installSamba.c:209
+msgid ""
+"You need to install the Windows networks sharing service in order to share "
+"your folders."
+msgstr ""
+
+#: ../src/installSamba.c:211
+msgid "Install service"
+msgstr ""
+
+#: ../src/nautilus-extension.c:41
+msgid "Folder Sharing"
+msgstr "ఫోల్డర్ భాగస్వామ్యము"
+
+#: ../src/nautilus-extension.c:83
+#, fuzzy
+msgid "Share with Windows users"
+msgstr "ఈ ఫోల్డర్‌ను భాగస్వామ్య పరచుము"
+
+#: ../src/nautilus-extension.c:84
+msgid "Share this Folder"
+msgstr "ఈ ఫోల్డర్‌ను భాగస్వామ్య పరచుము"
+
+#: ../src/nautilus-permissions.c:186
+#, c-format
+msgid "Could not change the permissions of folder \"%s\""
+msgstr "ఫోల్డర్ \"%s\"యొక్క అనుమతులను మార్చలేకపోయింది"
+
+#: ../src/nautilus-permissions.c:214
+#, c-format
+msgid ""
+"Nautilus needs to add some permissions to your folder \"%s\" in order to "
+"share it"
+msgstr "మీ ఫోల్డర్‌ \"%s\"ను భాగస్వామ్య పరచుటకు నాటిలస్ కొన్ని అనుమతులను జతచేయవలసివుంది"
+
+#: ../src/nautilus-permissions.c:220
+#, c-format
+msgid ""
+"The folder \"%s\" needs the following extra permissions for sharing to "
+"work:\n"
+"%s%s%sDo you want Nautilus to add these permissions to the folder "
+"automatically?"
+msgstr ""
+"భాగస్వామ్య పరచుట పనిచేయుటకు ఫోల్డర్ \"%s\"కు ఈ క్రింది అదనపు అనుమతులు అవసరము:\n"
+"%s%s%sనాటిలస్ ఈ అనుమతులను స్వయంచాలకంగా ఫోల్డర్‌కు జతచేయాలని మీరు కోరుకొనుచున్నారా?"
+
+#: ../src/nautilus-permissions.c:225
+#, fuzzy
+msgid "  - read permission by group/other\n"
+msgstr "  - ఇతరుల ద్వారా చదువబడుటకు అనుమతి\n"
+
+#: ../src/nautilus-permissions.c:227
+#, fuzzy
+msgid "  - write permission by group/other\n"
+msgstr "  - ఇతరుల ద్వారా వ్రాయబడుటకు అనుమతి\n"
+
+#: ../src/nautilus-permissions.c:229
+#, fuzzy
+msgid "  - execute permission by group/other\n"
+msgstr "  - ఇతరుల ద్వారా నిర్వర్తించబడుటకు అనుమతి\n"
+
+#: ../src/nautilus-permissions.c:233
+msgid "Add the permissions automatically"
+msgstr "అనుమతులను స్వయంచాలకంగా జతచేయుము"
+
+#: ../src/property-page.c:56
+#, c-format
+msgid "The user %s has not registered to the Samba Server."
+msgstr ""
+
+#: ../src/property-page.c:61
+#, c-format
+msgid ""
+" Ask your administrator to add new user to the Samba Server. \n"
+" \n"
+" <b> Suggestion: </b> sudo smbpasswd -a <i><b>%s</b></i>   \n"
+" \n"
+" %s"
+msgstr ""
+
+#: ../src/property-page.c:63 ../src/property-page.c:91
+#: ../src/property-page.c:120
+msgid ""
+"<b> Always restart the user session after performing one of these actions.</"
+"b> "
+msgstr ""
+
+#: ../src/property-page.c:83
+#, c-format
+msgid "Permission denied for %s."
+msgstr ""
+
+#: ../src/property-page.c:88
+#, c-format
+msgid ""
+"You do not have permission to create a usershare. \n"
+"\n"
+" %s \n"
+"\n"
+" %s %s \n"
+"\n"
+" %s"
+msgstr ""
+
+#: ../src/property-page.c:89 ../src/property-page.c:109
+msgid ""
+"Ask your administrator to grant you permissions to create a shared folder."
+msgstr ""
+
+#: ../src/property-page.c:90
+msgid ""
+"<b>Suggestion:</b> \n"
+" sudo usermod -a -G sambashare "
+msgstr ""
+
+#: ../src/property-page.c:114
+#, c-format
+msgid ""
+"Instructions for sharing directories with Nautilus-Share. \n"
+"\n"
+"%s \n"
+"%s \n"
+"\n"
+"%s \n"
+"%s \n"
+"\n"
+"%s \n"
+"%s"
+msgstr ""
+
+#: ../src/property-page.c:116
+msgid "<b>Add new user to SAMBA server:</b>"
+msgstr ""
+
+#: ../src/property-page.c:117
+msgid "    sudo smbpasswd -a <i>your_username</i>"
+msgstr ""
+
+#: ../src/property-page.c:118
+msgid "<b>Add new user to sambashare group:</b>"
+msgstr ""
+
+#: ../src/property-page.c:119
+msgid "    sudo usermod -a -G sambashare  <i>your_username</i> "
+msgstr ""
+
+#: ../src/property-page.c:121
+msgid ""
+"<big>Sharing with guest users without a password is available \n"
+" if specified in the Samba configuration.</big> "
+msgstr ""
+
+#: ../src/property-page.c:478
+#, fuzzy
+msgid "Share users"
+msgstr "ఈ ఫోల్డర్‌ను భాగస్వామ్య పరచుము"
+
+#: ../src/property-page.c:490
+msgid "Can write?"
+msgstr ""
+
+#. Apply button
+#: ../src/property-page.c:689 ../src/property-page.c:1156
+msgid "Modify _Share"
+msgstr "భాగస్వామ్యమును సవరించుము (_S)"
+
+#. Apply button
+#: ../src/property-page.c:689 ../src/property-page.c:1170
+msgid "Create _Share"
+msgstr "భాగస్వామ్యము సృష్టించుము (_S)"
+
+#: ../src/property-page.c:735
+msgid "The share name cannot be empty"
+msgstr "భాగస్వామ్య నామము ఖాళీగా వుండకూడదు"
+
+#: ../src/property-page.c:743
+msgid "Very long name to maintain compatibility  between systems."
+msgstr ""
+
+#: ../src/property-page.c:763
+#, c-format
+msgid "Error while getting share information: %s"
+msgstr "భాగస్వామ్య సమాచారమును పొందుటలో దోషము: %s"
+
+#: ../src/property-page.c:776
+msgid "Another share has the same name"
+msgstr "ఇంకొక భాగస్వామ్యముకూడా అదే నామమును కలిగివుంది"
+
+#: ../src/property-page.c:1051
+msgid "There was an error while getting the sharing information"
+msgstr "భాగస్వామ్య సమాచారమును పొందుచున్నప్పుడు అక్కడ వొక దోషమువుంది"
+
+#: ../src/property-page.c:1317
+msgid "Local Network Share"
+msgstr ""
+
+#: ../src/shares.c:46
+msgid "guest"
+msgstr ""
+
+#: ../src/shares.c:145
+#, c-format
+msgid "%s %s %s returned with signal %d"
+msgstr "%s %s %s అనునది సంకేతము %dతో తిప్పియివ్వబడింది"
+
+#: ../src/shares.c:154
+#, c-format
+msgid "%s %s %s failed for an unknown reason"
+msgstr "%s %s %s వొక తెలియని కారణంతో విఫలమైంది"
+
+#: ../src/shares.c:174
+#, c-format
+msgid "'net usershare' returned error %d: %s"
+msgstr "'net usershare' %d దోషము యిచ్చింది: %s"
+
+#: ../src/shares.c:176
+#, c-format
+msgid "'net usershare' returned error %d"
+msgstr "'net usershare' దోషము %d యిచ్చింది"
+
+#: ../src/shares.c:210
+#, c-format
+msgid "the output of 'net usershare' is not in valid UTF-8 encoding"
+msgstr "'net usershare' యొక్క అవుట్పుట్ విలువైన UTF-8 ఎన్కోడింగ్‌లో లేదు"
+
+#: ../src/shares.c:460
+msgid "Not valid user"
+msgstr ""
+
+#: ../src/shares.c:586 ../src/shares.c:743
+#, c-format
+msgid "Failed"
+msgstr "విఫలమైంది"
+
+#: ../src/shares.c:676
+#, c-format
+msgid "Samba's testparm returned with signal %d"
+msgstr "సాంబాయొక్క testparm %d సంకేతముతో యివ్వబడింది"
+
+#: ../src/shares.c:682
+#, c-format
+msgid "Samba's testparm failed for an unknown reason"
+msgstr "ఒక తెలియని కారణంతో సాంబాయొక్క testparm విఫలమైంది"
+
+#: ../src/shares.c:697
+#, c-format
+msgid "Samba's testparm returned error %d: %s"
+msgstr "సాంబాయొక్క testparm దోషము %d యిచ్చింది: %s"
+
+#: ../src/shares.c:699
+#, c-format
+msgid "Samba's testparm returned error %d"
+msgstr "సాంబాయొక్క testparm దోషము %d యిచ్చింది"
+
+#: ../src/shares.c:850
+#, c-format
+msgid "Cannot remove the share for path %s: that path is not shared"
+msgstr "పాత్ %s భాగస్వామ్యం తీసివేయలేము: ఆ పాత్ భాగస్వామ్యం పరచబడుటలేదు"
+
+#: ../src/shares.c:895
+#, c-format
+msgid ""
+"Cannot change the path of an existing share; please remove the old share "
+"first and add a new one"
+msgstr "ఉన్న భాగస్వామ్యం యొక్క పాత్‌ను మార్చలేదు; పాత భాగస్వామ్యమును తొలగించి కొత్త దానిని జతచేయుము"
+
+#: ../interfaces/share-dialog.ui.h:1
+#, fuzzy
+msgid "<big><b>_Share this Directory</b></big>"
+msgstr "<big><b>ఫోల్డర్ భాగస్వామ్యము</b></big>"
+
+#: ../interfaces/share-dialog.ui.h:2
+#, fuzzy
+msgid "Shared Directory _Name:"
+msgstr "భాగస్వామ్యం నామము (_n):"
+
+#: ../interfaces/share-dialog.ui.h:3
+msgid "Select a user from the list."
+msgstr ""
+
+#: ../interfaces/share-dialog.ui.h:4
+msgid "Add a user from the list."
+msgstr ""
+
+#: ../interfaces/share-dialog.ui.h:5
+msgid "Delete a user from the list."
+msgstr ""
+
+#: ../interfaces/share-dialog.ui.h:6
+msgid "Information to users."
+msgstr ""
+
+#: ../interfaces/share-dialog.ui.h:7
+#, fuzzy
+msgid "_Comment"
+msgstr "వ్యాఖ్యానము (_m):"
+
+#~ msgid "Share name is too long"
+#~ msgstr "భాగస్వామ్య నామము మరీ పొడవైంది"
+
+#~ msgid "Share"
+#~ msgstr "భాగస్వామ్యము"
+
+#~ msgid "Sharing Options"
+#~ msgstr "భాగస్వామ్య ఐచ్చికాలు"
+
+#~ msgid "Share this _folder"
+#~ msgstr "ఈ ఫోల్డర్ భాగస్వామ్యపరచుము (_f)"
+
+#~| msgid "_Allow other people to write in this folder"
+#~ msgid "_Allow others to create and delete files in this folder"
+#~ msgstr "ఈ ఫోల్డర్‌నందు ఫైళ్ళను సృష్టించుటకు మరియు తొలగించుటకు యితరులను అనుమతించుము (_A)"
+
+#~ msgid "_Guest access (for people without a user account)"
+#~ msgstr "అతిధి యాక్సెస్ (వినియోగదారి ఖాతా లేని వారికొరకు) (_G)"

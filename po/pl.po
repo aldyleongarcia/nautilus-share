@@ -1,0 +1,398 @@
+# Polish translation for nautilus-share package.
+# Copyright (C) 2001-2009 Free Software Foundation, Inc.
+# -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+# Aviary.pl
+# Jeśli masz jakiekolwiek uwagi odnoszące się do tłumaczenia lub chcesz
+# pomóc w jego rozwijaniu i pielęgnowaniu, napisz do nas:
+# gnomepl@aviary.pl
+# -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+# This file is distributed under the same license as the nautilus-share package.
+# sebastien estienne <sebastien.estienne@gmail.com>, 2005.
+# Tomasz Dominikowski <tdominikowski@aviary.pl>, 2008, 2009
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: nautilus-share\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-04-04 11:38-0400\n"
+"PO-Revision-Date: 2009-09-07 21:52+0100\n"
+"Last-Translator: Tomasz Dominikowski <dominikowski@gmail.com>\n"
+"Language-Team: Aviary.pl <gnomepl@aviary.pl>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-Language: Polish\n"
+"X-Poedit-Country: Poland\n"
+"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
+"|| n%100>=20) ? 1 : 2);\n"
+
+#: ../src/installSamba.c:55
+msgid "Restart your session"
+msgstr ""
+
+#: ../src/installSamba.c:58
+msgid "You need to restart your session in order to enable sharing."
+msgstr ""
+
+#: ../src/installSamba.c:59
+msgid "Restart session"
+msgstr ""
+
+#: ../src/installSamba.c:163
+msgid "Sharing service installation failed"
+msgstr ""
+
+#: ../src/installSamba.c:167
+msgid ""
+"Sharing service installation has failed. Would you like to retry the "
+"installation?"
+msgstr ""
+
+#: ../src/installSamba.c:171
+msgid "Retry"
+msgstr ""
+
+#: ../src/installSamba.c:207
+msgid "Sharing service is not installed"
+msgstr ""
+
+#: ../src/installSamba.c:209
+msgid ""
+"You need to install the Windows networks sharing service in order to share "
+"your folders."
+msgstr ""
+
+#: ../src/installSamba.c:211
+msgid "Install service"
+msgstr ""
+
+#: ../src/nautilus-extension.c:41
+msgid "Folder Sharing"
+msgstr "Współdzielenie katalogów"
+
+#: ../src/nautilus-extension.c:83
+#, fuzzy
+msgid "Share with Windows users"
+msgstr "Udostępnij ten katalog"
+
+#: ../src/nautilus-extension.c:84
+msgid "Share this Folder"
+msgstr "Udostępnij ten katalog"
+
+#: ../src/nautilus-permissions.c:186
+#, c-format
+msgid "Could not change the permissions of folder \"%s\""
+msgstr "Nie można zmienić uprawnień katalogu \"%s\""
+
+#: ../src/nautilus-permissions.c:214
+#, c-format
+msgid ""
+"Nautilus needs to add some permissions to your folder \"%s\" in order to "
+"share it"
+msgstr ""
+"Program Nautilus musi nadać pewne uprawnienia na katalog \"%s\", aby można "
+"było go współdzielić"
+
+#: ../src/nautilus-permissions.c:220
+#, c-format
+msgid ""
+"The folder \"%s\" needs the following extra permissions for sharing to "
+"work:\n"
+"%s%s%sDo you want Nautilus to add these permissions to the folder "
+"automatically?"
+msgstr ""
+"Katalog \"%s\" wymaga następujących dodatkowych uprawnień, aby uruchomić "
+"współdzielenie:\n"
+"%s%s%sNadać te uprawnienia automatycznie?"
+
+#: ../src/nautilus-permissions.c:225
+#, fuzzy
+msgid "  - read permission by group/other\n"
+msgstr "  - uprawnienia odczytu przez innych\n"
+
+#: ../src/nautilus-permissions.c:227
+#, fuzzy
+msgid "  - write permission by group/other\n"
+msgstr "  - uprawnienia zapisu przez innych\n"
+
+#: ../src/nautilus-permissions.c:229
+#, fuzzy
+msgid "  - execute permission by group/other\n"
+msgstr "  - uprawnienia wykonania przez innych\n"
+
+#: ../src/nautilus-permissions.c:233
+msgid "Add the permissions automatically"
+msgstr "Nadaj uprawnienia automatycznie"
+
+#: ../src/property-page.c:56
+#, c-format
+msgid "The user %s has not registered to the Samba Server."
+msgstr ""
+
+#: ../src/property-page.c:61
+#, c-format
+msgid ""
+" Ask your administrator to add new user to the Samba Server. \n"
+" \n"
+" <b> Suggestion: </b> sudo smbpasswd -a <i><b>%s</b></i>   \n"
+" \n"
+" %s"
+msgstr ""
+
+#: ../src/property-page.c:63 ../src/property-page.c:91
+#: ../src/property-page.c:120
+msgid ""
+"<b> Always restart the user session after performing one of these actions.</"
+"b> "
+msgstr ""
+
+#: ../src/property-page.c:83
+#, c-format
+msgid "Permission denied for %s."
+msgstr ""
+
+#: ../src/property-page.c:88
+#, c-format
+msgid ""
+"You do not have permission to create a usershare. \n"
+"\n"
+" %s \n"
+"\n"
+" %s %s \n"
+"\n"
+" %s"
+msgstr ""
+
+#: ../src/property-page.c:89 ../src/property-page.c:109
+msgid ""
+"Ask your administrator to grant you permissions to create a shared folder."
+msgstr ""
+
+#: ../src/property-page.c:90
+msgid ""
+"<b>Suggestion:</b> \n"
+" sudo usermod -a -G sambashare "
+msgstr ""
+
+#: ../src/property-page.c:114
+#, c-format
+msgid ""
+"Instructions for sharing directories with Nautilus-Share. \n"
+"\n"
+"%s \n"
+"%s \n"
+"\n"
+"%s \n"
+"%s \n"
+"\n"
+"%s \n"
+"%s"
+msgstr ""
+
+#: ../src/property-page.c:116
+msgid "<b>Add new user to SAMBA server:</b>"
+msgstr ""
+
+#: ../src/property-page.c:117
+msgid "    sudo smbpasswd -a <i>your_username</i>"
+msgstr ""
+
+#: ../src/property-page.c:118
+msgid "<b>Add new user to sambashare group:</b>"
+msgstr ""
+
+#: ../src/property-page.c:119
+msgid "    sudo usermod -a -G sambashare  <i>your_username</i> "
+msgstr ""
+
+#: ../src/property-page.c:121
+msgid ""
+"<big>Sharing with guest users without a password is available \n"
+" if specified in the Samba configuration.</big> "
+msgstr ""
+
+#: ../src/property-page.c:478
+#, fuzzy
+msgid "Share users"
+msgstr "Udostępnij ten katalog"
+
+#: ../src/property-page.c:490
+msgid "Can write?"
+msgstr ""
+
+#. Apply button
+#: ../src/property-page.c:689 ../src/property-page.c:1156
+msgid "Modify _Share"
+msgstr "_Zmodyfikuj udział"
+
+#. Apply button
+#: ../src/property-page.c:689 ../src/property-page.c:1170
+msgid "Create _Share"
+msgstr "_Utwórz udział"
+
+#: ../src/property-page.c:735
+msgid "The share name cannot be empty"
+msgstr "Nazwa udziału nie może być pusta"
+
+#: ../src/property-page.c:743
+msgid "Very long name to maintain compatibility  between systems."
+msgstr ""
+
+#: ../src/property-page.c:763
+#, c-format
+msgid "Error while getting share information: %s"
+msgstr "Błąd podczas uzyskiwania informacji o udziale: %s"
+
+#: ../src/property-page.c:776
+msgid "Another share has the same name"
+msgstr "Inny udział ma już taką nazwę"
+
+#: ../src/property-page.c:1051
+msgid "There was an error while getting the sharing information"
+msgstr "Wystąpił błąd podczas pobierania informacji o współdzieleniu"
+
+#: ../src/property-page.c:1317
+msgid "Local Network Share"
+msgstr ""
+
+#: ../src/shares.c:46
+msgid "guest"
+msgstr ""
+
+#: ../src/shares.c:145
+#, c-format
+msgid "%s %s %s returned with signal %d"
+msgstr "%s %s %s zwrócono z sygnałem %d"
+
+#: ../src/shares.c:154
+#, c-format
+msgid "%s %s %s failed for an unknown reason"
+msgstr "%s %s %s nieudane z nieznanego powodu"
+
+#: ../src/shares.c:174
+#, c-format
+msgid "'net usershare' returned error %d: %s"
+msgstr "\"net usershare\" zwrócił błąd %d: %s"
+
+#: ../src/shares.c:176
+#, c-format
+msgid "'net usershare' returned error %d"
+msgstr "\"net usershare\" zwrócił błąd %d"
+
+#: ../src/shares.c:210
+#, c-format
+msgid "the output of 'net usershare' is not in valid UTF-8 encoding"
+msgstr ""
+"wiadomość zwrotna \"net usershare\" nie zawiera poprawnego kodowania UTF-8"
+
+#: ../src/shares.c:460
+msgid "Not valid user"
+msgstr ""
+
+#: ../src/shares.c:586 ../src/shares.c:743
+#, c-format
+msgid "Failed"
+msgstr "Nieudane"
+
+#: ../src/shares.c:676
+#, c-format
+msgid "Samba's testparm returned with signal %d"
+msgstr "Testparm usługi Samba zwrócił sygnał %d"
+
+#: ../src/shares.c:682
+#, c-format
+msgid "Samba's testparm failed for an unknown reason"
+msgstr "Testparm usługi Samba nieudany z nieznanego powodu"
+
+#: ../src/shares.c:697
+#, c-format
+msgid "Samba's testparm returned error %d: %s"
+msgstr "Testparm usługi Samba zwrócił błąd %d: %s"
+
+#: ../src/shares.c:699
+#, c-format
+msgid "Samba's testparm returned error %d"
+msgstr "Testparm usługi Samba zwrócił błąd %d"
+
+#: ../src/shares.c:850
+#, c-format
+msgid "Cannot remove the share for path %s: that path is not shared"
+msgstr ""
+"Nie można usunąć udziału dla ścieżki %s: ta ścieżka nie jest współdzielona"
+
+#: ../src/shares.c:895
+#, c-format
+msgid ""
+"Cannot change the path of an existing share; please remove the old share "
+"first and add a new one"
+msgstr ""
+"Nie można zmienić ścieżki do istniejącego udziału; proszę najpierw usunąć "
+"poprzedni udział i utworzyć nowy"
+
+#: ../interfaces/share-dialog.ui.h:1
+#, fuzzy
+msgid "<big><b>_Share this Directory</b></big>"
+msgstr "<big><b>Współdzielenie katalogów</b></big>"
+
+#: ../interfaces/share-dialog.ui.h:2
+#, fuzzy
+msgid "Shared Directory _Name:"
+msgstr "_Nazwa udziału:"
+
+#: ../interfaces/share-dialog.ui.h:3
+msgid "Select a user from the list."
+msgstr ""
+
+#: ../interfaces/share-dialog.ui.h:4
+msgid "Add a user from the list."
+msgstr ""
+
+#: ../interfaces/share-dialog.ui.h:5
+msgid "Delete a user from the list."
+msgstr ""
+
+#: ../interfaces/share-dialog.ui.h:6
+msgid "Information to users."
+msgstr ""
+
+#: ../interfaces/share-dialog.ui.h:7
+#, fuzzy
+msgid "_Comment"
+msgstr "K_omentarz:"
+
+#~ msgid "Share name is too long"
+#~ msgstr "Nazwa udziału jest zbyt długa"
+
+#~ msgid "Share"
+#~ msgstr "Udostępnianie"
+
+#~ msgid "Sharing Options"
+#~ msgstr "Opcje współdzielenia"
+
+#~ msgid "Share this _folder"
+#~ msgstr "Udostępnianie tego _katalogu"
+
+#~ msgid "_Allow others to create and delete files in this folder"
+#~ msgstr "Z_ezwolenie innym na zapisywanie i usuwanie plików w tym katalogu"
+
+#~ msgid "_Guest access (for people without a user account)"
+#~ msgstr "_Dostęp dla gości (dla osób bez konta użytkownika)"
+
+#~ msgid "Sharename too long, may not appear on all Os"
+#~ msgstr "Zbyt dĹuga nazwa, moĹźe siÄ nieukazaÄ w niektĂłrych systemach"
+
+#~ msgid "Sharename already in use or forbidden!"
+#~ msgstr "Nazwa ta juĹź jest uĹźyta, bÄdĹş teĹź zabroniona!"
+
+#~ msgid "shared (read only)"
+#~ msgstr "udostÄpniony (tylko do odczytu)"
+
+#~ msgid "shared (read and write)"
+#~ msgstr "udostÄpniony (odczyt i zapis)"
+
+#~ msgid "not shared"
+#~ msgstr "nie udostÄpniony"
+
+#~ msgid "Close"
+#~ msgstr "Fermer"
