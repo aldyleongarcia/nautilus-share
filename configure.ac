@@ -1,5 +1,5 @@
 AC_PREREQ([2.69])
-AC_INIT([nautilus-share],[1.0.0])
+AC_INIT([nautilus-share],[0.8.1])
 AC_CONFIG_SRCDIR([config.h.in])
 AC_CONFIG_HEADERS([config.h])
 AC_CONFIG_MACRO_DIRS([m4])

@@ -2,6 +2,21 @@
 <!-- Generated with glade 3.18.3 -->
 <interface>
   <requires lib="gtk+" version="3.12"/>
+    <object class="GtkImage" id="add_image">
+        <property name="visible">True</property>
+        <property name="can_focus">False</property>
+        <property name="pixbuf">list-add.png</property>
+    </object>
+    <object class="GtkImage" id="delete_image">
+        <property name="visible">True</property>
+        <property name="can_focus">False</property>
+        <property name="pixbuf">list-remove.png</property>
+    </object>
+    <object class="GtkImage" id="info_image">
+        <property name="visible">True</property>
+        <property name="can_focus">False</property>
+        <property name="pixbuf">user-info.png</property>
+    </object>
   <object class="GtkBox" id="start">
     <property name="width_request">360</property>
     <property name="visible">True</property>
@@ -29,34 +44,39 @@
           </packing>
         </child>
         <child>
-          <object class="GtkLabel" id="share_label">
+            <object class="GtkImage" id="logo_image">
             <property name="visible">True</property>
             <property name="can_focus">False</property>
-            <property name="label" translatable="yes">&lt;big&gt;&lt;b&gt;_Share this Directory&lt;/b&gt;&lt;/big&gt;</property>
-            <property name="use_markup">True</property>
-            <property name="use_underline">True</property>
-            <property name="justify">center</property>
-            <property name="mnemonic_widget">switchbutton_share_folder</property>
+                <property name="pixbuf">bad.png</property>
+                <property name="pixel_size">32</property>
           </object>
           <packing>
-            <property name="expand">True</property>
+              <property name="expand">False</property>
             <property name="fill">True</property>
-            <property name="position">1</property>
+              <property name="pack_type">end</property>
+              <property name="position">1</property>
           </packing>
         </child>
         <child>
-          <object class="GtkImage" id="logo_image">
+            <object class="GtkLabel" id="share_label">
             <property name="visible">True</property>
             <property name="can_focus">False</property>
-            <property name="pixel_size">32</property>
-            <property name="icon_name">folder-remote</property>
+                <property name="label" translatable="yes">&lt;big&gt;&lt;b&gt;Samba Server Status&lt;/b&gt;&lt;/big&gt;</property>
+                <property name="use_markup">True</property>
+                <property name="use_underline">True</property>
+                <property name="justify">center</property>
+                <property name="mnemonic_widget">switchbutton_share_folder</property>
           </object>
           <packing>
             <property name="expand">False</property>
-            <property name="fill">False</property>
-            <property name="position">2</property>
+              <property name="fill">True</property>
+              <property name="pack_type">end</property>
+              <property name="position">2</property>
           </packing>
         </child>
+          <child>
+              <placeholder/>
+          </child>
       </object>
       <packing>
         <property name="expand">False</property>
@@ -128,7 +148,7 @@
                 <child internal-child="entry">
                   <object class="GtkEntry" id="comboboxtext-entry">
                     <property name="can_focus">False</property>
-                    <property name="primary_icon_name">contact-new</property>
+                      <property name="primary_icon_pixbuf">contact-new.png</property>
                     <property name="primary_icon_tooltip_text" translatable="yes">Select a user from the list.</property>
                   </object>
                 </child>
@@ -138,9 +158,6 @@
                 <property name="fill">True</property>
                 <property name="position">0</property>
               </packing>
-            </child>
-            <child>
-              <placeholder/>
             </child>
             <child>
               <object class="GtkToolbar" id="toolbar_buttons">
@@ -155,7 +172,7 @@
                     <property name="can_focus">False</property>
                     <property name="tooltip_text" translatable="yes">Add a user from the list.</property>
                     <property name="use_underline">True</property>
-                    <property name="stock_id">gtk-add</property>
+                      <property name="icon_widget">add_image</property>
                   </object>
                   <packing>
                     <property name="expand">False</property>
@@ -168,7 +185,7 @@
                     <property name="can_focus">False</property>
                     <property name="tooltip_text" translatable="yes">Delete a user from the list.</property>
                     <property name="use_underline">True</property>
-                    <property name="stock_id">gtk-remove</property>
+                      <property name="icon_widget">delete_image</property>
                   </object>
                   <packing>
                     <property name="expand">False</property>
@@ -181,7 +198,7 @@
                     <property name="can_focus">False</property>
                     <property name="tooltip_text" translatable="yes">Information to users.</property>
                     <property name="use_underline">True</property>
-                    <property name="stock_id">gtk-dialog-question</property>
+                      <property name="icon_widget">info_image</property>
                   </object>
                   <packing>
                     <property name="expand">False</property>
