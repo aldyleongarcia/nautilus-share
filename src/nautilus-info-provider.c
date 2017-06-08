@@ -1,11 +1,32 @@
-//
-// Created by ghost on 2/23/17.
-//
+/* nautilus-share -- Nautilus File Sharing Extension
+ *
+ * Sebastien Estienne <sebastien.estienne@gmail.com>
+ * Aldy Leon Garcia <aldyl@nauta.cu>
+ *
+ * This program is free software; you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation; either version 2 of the License, or
+ * (at your option) any later version.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with this program; if not, write to the Free Software
+ * Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA.
+ *
+ * (C) Copyright 2005 Ethium, Inc.
+ * (C) Copyright 2017 UCI.
+ */
+
 #ifdef HAVE_CONFIG_H
 #include <config.h>
 #endif
 
 #include "shares.h"
+
 #include "property-page-class.h"
 
 #include "nautilus-info-provider.h"
@@ -18,16 +39,21 @@
 /*----------------Direccion completa del directorio a compartir-------------*/
 gchar *
 get_fullpath_from_fileinfo(NautilusFileInfo *fileinfo) {
+
     GFile *file;
+
     gchar *fullpath;
 
     g_assert (fileinfo != NULL);
 
     file = nautilus_file_info_get_location(fileinfo);
+
     fullpath = g_file_get_path(file);
 
     g_assert (fullpath != NULL && g_file_is_native(file));
+
     /* In the beginning we checked that this was a local URI inside root directory / */
+
     g_object_unref(file);
 
     return (fullpath);
@@ -103,11 +129,16 @@ get_share_info_for_file_info(NautilusFileInfo *file, ShareInfo **share_info, gbo
 
         /* FIXME: NULL GError */
         if (!shares_get_share_info_for_share_name(share_name, share_info, NULL)) {
+
             *share_info = NULL;
+
             *is_shareable = TRUE;
+
             /* it *has* the prefix, anyway... we are just unsynchronized with what gnome-vfs thinks */
         } else {
+
             *is_shareable = TRUE;
+
         }
 
         goto out;
@@ -141,12 +172,15 @@ NautilusShareStatus
 file_get_share_status_file(NautilusFileInfo *file) {
     ShareInfo *share_info;
     gboolean is_shareable;
-   // g_message ("Info for File Status() start");
+
+    // g_message ("Info for File Status() start");
+
     get_share_info_for_file_info(file, &share_info, &is_shareable);
 
     if (!is_shareable)
         return NAUTILUS_SHARE_NOT_SHARED;
     //g_message ("Info for File Status() ok");
+
     return get_share_status_and_free_share_info(share_info);
 }
 

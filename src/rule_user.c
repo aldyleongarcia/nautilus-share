@@ -1,10 +1,31 @@
+/* nautilus-share -- Nautilus File Sharing Extension
+ *
+ * Sebastien Estienne <sebastien.estienne@gmail.com>
+ * Aldy Leon Garcia <aldyl@nauta.cu>
+ *
+ * This program is free software; you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation; either version 2 of the License, or
+ * (at your option) any later version.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with this program; if not, write to the Free Software
+ * Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA.
+ *
+ * (C) Copyright 2005 Ethium, Inc.
+ * (C) Copyright 2017 Cesol, UCI.
+ */
 
 
 #ifdef HAVE_CONFIG_H
 #include <config.h>
 #endif
 
-#include <stdlib.h>
 #include <glib/gi18n-lib.h>
 #include "rule_user.h"
 
@@ -43,7 +64,7 @@ rule_add_data(gchar *name, gchar *permission, GSList *rules) {
     new->permission = permission;
 
     // Validar datos
-    //printf("Rule add data Nombre:  %s ", new->name);
+    //printf("Rule add data Nombre:  %s \n", new->name);
     // printf("Rule add data Permiso:  %s \n", new->permission);
 
 
@@ -66,8 +87,8 @@ rule_get_data(gchar **name, gchar **privilege, guint pos, GSList *rules) {
         g_assert(auxiliar->name);
         g_assert(auxiliar->permission);
 
-        // printf("Rule Nombre:  %s  ", auxiliar->name);
-        // printf("Permission:  %s \n", auxiliar->permission);
+        // printf("Rule Nombre:  %s  \n", auxiliar->name);
+        // printf("Permission:  %s   \n", auxiliar->permission);
 
         *name = auxiliar->name;
         *privilege = auxiliar->permission;

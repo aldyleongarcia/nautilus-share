@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: nautilus-share\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-04-04 11:38-0400\n"
+"POT-Creation-Date: 2017-05-26 19:25-0400\n"
 "PO-Revision-Date: 2014-03-20 12:52+0100\n"
 "Last-Translator: Kristjan SCHMIDT <kristjan.schmidt@googlemail.com>\n"
 "Language-Team: Esperanto <gnome-l10n-eo@lists.launchpad.net>\n"
@@ -20,67 +20,67 @@ msgstr ""
 "X-Generator: Launchpad (build 12915)\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: ../src/installSamba.c:55
+#: ../src/installSamba.c:74
 #, fuzzy
 msgid "Restart your session"
 msgstr "Restartigi seancon"
 
-#: ../src/installSamba.c:58
+#: ../src/installSamba.c:77
 msgid "You need to restart your session in order to enable sharing."
 msgstr "Vi necesas restartigi vian seancon por enŝalti kunhavigon."
 
-#: ../src/installSamba.c:59
+#: ../src/installSamba.c:78
 msgid "Restart session"
 msgstr "Restartigi seancon"
 
-#: ../src/installSamba.c:163
+#: ../src/installSamba.c:182
 msgid "Sharing service installation failed"
 msgstr "Instalo de la kunhavigservo malsukcesis"
 
-#: ../src/installSamba.c:167
+#: ../src/installSamba.c:186
 msgid ""
 "Sharing service installation has failed. Would you like to retry the "
 "installation?"
 msgstr ""
 "Instalo de la kunhavigservo malsukcesis. Ĉu vi volas reprovi la instalon?"
 
-#: ../src/installSamba.c:171
+#: ../src/installSamba.c:190
 msgid "Retry"
 msgstr "Reprovi"
 
-#: ../src/installSamba.c:207
+#: ../src/installSamba.c:226
 msgid "Sharing service is not installed"
 msgstr "Kunhavigservo ne estas instalite"
 
-#: ../src/installSamba.c:209
+#: ../src/installSamba.c:228
 msgid ""
 "You need to install the Windows networks sharing service in order to share "
 "your folders."
 msgstr ""
 
-#: ../src/installSamba.c:211
+#: ../src/installSamba.c:230
 msgid "Install service"
 msgstr "Instali servon"
 
-#: ../src/nautilus-extension.c:41
+#: ../src/nautilus-extension.c:58
 msgid "Folder Sharing"
 msgstr "Dosieruja kunhavigo"
 
-#: ../src/nautilus-extension.c:83
+#: ../src/nautilus-extension.c:99
 #, fuzzy
 msgid "Share with Windows users"
 msgstr "Kunhavigi ĉi tiun dosierujon"
 
-#: ../src/nautilus-extension.c:84
+#: ../src/nautilus-extension.c:100
 msgid "Share this Folder"
 msgstr "Kunhavigi ĉi tiun dosierujon"
 
-#: ../src/nautilus-permissions.c:186
+#: ../src/nautilus-permissions.c:206
 #, c-format
 msgid "Could not change the permissions of folder \"%s\""
 msgstr "Ne eblis ŝanĝi la permesojn de dosierujo \"%s\""
 
-#: ../src/nautilus-permissions.c:214
+#: ../src/nautilus-permissions.c:234
 #, c-format
 msgid ""
 "Nautilus needs to add some permissions to your folder \"%s\" in order to "
@@ -89,7 +89,7 @@ msgstr ""
 "Necesas, ke Naŭtilo aldonas kelkajn permesojn al via dosierujo \"%s\" por "
 "kunhavigi ĝin"
 
-#: ../src/nautilus-permissions.c:220
+#: ../src/nautilus-permissions.c:240
 #, c-format
 msgid ""
 "The folder \"%s\" needs the following extra permissions for sharing to "
@@ -102,31 +102,31 @@ msgstr ""
 "%s%s%sĈu vi volas, ke Naŭtilo aldonas ĉi tiujn permesojn al la dosierujo "
 "aŭtomate?"
 
-#: ../src/nautilus-permissions.c:225
+#: ../src/nautilus-permissions.c:245
 #, fuzzy
 msgid "  - read permission by group/other\n"
 msgstr "  - legi permesojn de aliuloj\n"
 
-#: ../src/nautilus-permissions.c:227
+#: ../src/nautilus-permissions.c:247
 #, fuzzy
 msgid "  - write permission by group/other\n"
 msgstr "  - skribi permesojn de aliuloj\n"
 
-#: ../src/nautilus-permissions.c:229
+#: ../src/nautilus-permissions.c:249
 #, fuzzy
 msgid "  - execute permission by group/other\n"
 msgstr "  - ruli permesojn de aliuloj\n"
 
-#: ../src/nautilus-permissions.c:233
+#: ../src/nautilus-permissions.c:253
 msgid "Add the permissions automatically"
 msgstr "Aldoni la permesojn aŭtomate"
 
-#: ../src/property-page.c:56
+#: ../src/property-page.c:78
 #, c-format
 msgid "The user %s has not registered to the Samba Server."
 msgstr ""
 
-#: ../src/property-page.c:61
+#: ../src/property-page.c:83
 #, c-format
 msgid ""
 " Ask your administrator to add new user to the Samba Server. \n"
@@ -136,186 +136,192 @@ msgid ""
 " %s"
 msgstr ""
 
-#: ../src/property-page.c:63 ../src/property-page.c:91
-#: ../src/property-page.c:120
+#: ../src/property-page.c:85 ../src/property-page.c:114
+#: ../src/property-page.c:143
 msgid ""
 "<b> Always restart the user session after performing one of these actions.</"
 "b> "
 msgstr ""
 
-#: ../src/property-page.c:83
+#: ../src/property-page.c:106
 #, c-format
 msgid "Permission denied for %s."
 msgstr ""
 
-#: ../src/property-page.c:88
+#: ../src/property-page.c:111
 #, c-format
 msgid ""
 "You do not have permission to create a usershare. \n"
 "\n"
 " %s \n"
 "\n"
-" %s %s \n"
+" %s %s sambashare \n"
 "\n"
 " %s"
 msgstr ""
 
-#: ../src/property-page.c:89 ../src/property-page.c:109
+#: ../src/property-page.c:112 ../src/property-page.c:132
 msgid ""
 "Ask your administrator to grant you permissions to create a shared folder."
 msgstr ""
 
-#: ../src/property-page.c:90
+#: ../src/property-page.c:113
 msgid ""
 "<b>Suggestion:</b> \n"
-" sudo usermod -a -G sambashare "
+" sudo adduser"
 msgstr ""
 
-#: ../src/property-page.c:114
+#: ../src/property-page.c:137
 #, c-format
 msgid ""
-"Instructions for sharing directories with Nautilus-Share. \n"
+"Instructions for sharing directories with Nautilus-Share.\n"
 "\n"
 "%s \n"
 "%s \n"
 "\n"
 "%s \n"
-"%s \n"
+"%s sambashare \n"
 "\n"
 "%s \n"
 "%s"
 msgstr ""
 
-#: ../src/property-page.c:116
+#: ../src/property-page.c:139
 msgid "<b>Add new user to SAMBA server:</b>"
 msgstr ""
 
-#: ../src/property-page.c:117
+#: ../src/property-page.c:140
 msgid "    sudo smbpasswd -a <i>your_username</i>"
 msgstr ""
 
-#: ../src/property-page.c:118
+#: ../src/property-page.c:141
 msgid "<b>Add new user to sambashare group:</b>"
 msgstr ""
 
-#: ../src/property-page.c:119
-msgid "    sudo usermod -a -G sambashare  <i>your_username</i> "
+#: ../src/property-page.c:142
+msgid "    sudo adduser <i>your_username</i> "
 msgstr ""
 
-#: ../src/property-page.c:121
+#: ../src/property-page.c:144
 msgid ""
-"<big>Sharing with guest users without a password is available \n"
-" if specified in the Samba configuration.</big> "
+"Sharing with guest users without a password is available \n"
+" if specified in the Samba configuration. "
 msgstr ""
 
-#: ../src/property-page.c:478
+#: ../src/property-page.c:664
 #, fuzzy
 msgid "Share users"
 msgstr "Kunhavigi ĉi tiun dosierujon"
 
-#: ../src/property-page.c:490
+#: ../src/property-page.c:684
 msgid "Can write?"
 msgstr ""
 
 #. Apply button
-#: ../src/property-page.c:689 ../src/property-page.c:1156
+#: ../src/property-page.c:885 ../src/property-page.c:1510
 msgid "Modify _Share"
 msgstr "Redakti _kunhavigon"
 
 #. Apply button
-#: ../src/property-page.c:689 ../src/property-page.c:1170
+#: ../src/property-page.c:886 ../src/property-page.c:1525
 msgid "Create _Share"
 msgstr "Krei _kunhavigon"
 
-#: ../src/property-page.c:735
+#: ../src/property-page.c:1003
 msgid "The share name cannot be empty"
 msgstr "La kunhavnomo ne povas esti malplena"
 
-#: ../src/property-page.c:743
+#: ../src/property-page.c:1013
 msgid "Very long name to maintain compatibility  between systems."
 msgstr ""
 
-#: ../src/property-page.c:763
+#: ../src/property-page.c:1035
 #, c-format
 msgid "Error while getting share information: %s"
 msgstr "Eraro dum obtenado de kunhavinformoj: %s"
 
-#: ../src/property-page.c:776
+#: ../src/property-page.c:1050
 msgid "Another share has the same name"
 msgstr "Alia kunhavo havas saman nomon"
 
-#: ../src/property-page.c:1051
+#: ../src/property-page.c:1080
+msgid ""
+"The Samba server service is not active \n"
+" or is being blocked by a firewall."
+msgstr ""
+
+#: ../src/property-page.c:1373
 msgid "There was an error while getting the sharing information"
 msgstr "Estis eraro dum obtenado de kunhaviginformoj"
 
-#: ../src/property-page.c:1317
+#: ../src/property-page.c:1709
 msgid "Local Network Share"
 msgstr ""
 
-#: ../src/shares.c:46
+#: ../src/shares.c:69
 msgid "guest"
 msgstr ""
 
-#: ../src/shares.c:145
+#: ../src/shares.c:168
 #, c-format
 msgid "%s %s %s returned with signal %d"
 msgstr "%s %s %s revenigis kun signalo %d"
 
-#: ../src/shares.c:154
+#: ../src/shares.c:177
 #, c-format
 msgid "%s %s %s failed for an unknown reason"
 msgstr "%s %s %s malsukcesis pro nekonata kialo"
 
-#: ../src/shares.c:174
+#: ../src/shares.c:197
 #, c-format
 msgid "'net usershare' returned error %d: %s"
 msgstr "'net usershare' revenigis eraron %d: %s"
 
-#: ../src/shares.c:176
+#: ../src/shares.c:199
 #, c-format
 msgid "'net usershare' returned error %d"
 msgstr "'net usershare' revenigis eraron %d"
 
-#: ../src/shares.c:210
+#: ../src/shares.c:233
 #, c-format
 msgid "the output of 'net usershare' is not in valid UTF-8 encoding"
 msgstr ""
 
-#: ../src/shares.c:460
+#: ../src/shares.c:485
 msgid "Not valid user"
 msgstr ""
 
-#: ../src/shares.c:586 ../src/shares.c:743
+#: ../src/shares.c:609 ../src/shares.c:766
 #, c-format
 msgid "Failed"
 msgstr "Malsukcesis"
 
-#: ../src/shares.c:676
+#: ../src/shares.c:699
 #, c-format
 msgid "Samba's testparm returned with signal %d"
 msgstr ""
 
-#: ../src/shares.c:682
+#: ../src/shares.c:705
 #, c-format
 msgid "Samba's testparm failed for an unknown reason"
 msgstr ""
 
-#: ../src/shares.c:697
+#: ../src/shares.c:720
 #, c-format
 msgid "Samba's testparm returned error %d: %s"
 msgstr ""
 
-#: ../src/shares.c:699
+#: ../src/shares.c:722
 #, c-format
 msgid "Samba's testparm returned error %d"
 msgstr ""
 
-#: ../src/shares.c:850
+#: ../src/shares.c:873
 #, c-format
 msgid "Cannot remove the share for path %s: that path is not shared"
 msgstr ""
 
-#: ../src/shares.c:895
+#: ../src/shares.c:918
 #, c-format
 msgid ""
 "Cannot change the path of an existing share; please remove the old share "
@@ -324,7 +330,7 @@ msgstr ""
 
 #: ../interfaces/share-dialog.ui.h:1
 #, fuzzy
-msgid "<big><b>_Share this Directory</b></big>"
+msgid "<big><b>Samba Server Status</b></big>"
 msgstr "<big><b>Dosieruja kunhavigo</b></big>"
 
 #: ../interfaces/share-dialog.ui.h:2

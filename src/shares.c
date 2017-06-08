@@ -1,3 +1,26 @@
+/* nautilus-share -- Nautilus File Sharing Extension
+ *
+ * Sebastien Estienne <sebastien.estienne@gmail.com>
+ * Aldy Leon Garcia <aldyl@nauta.cu>
+ *
+ * This program is free software; you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation; either version 2 of the License, or
+ * (at your option) any later version.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with this program; if not, write to the Free Software
+ * Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA.
+ *
+ * (C) Copyright 2005 Ethium, Inc.
+ * (C) Copyright 2017 Cesol, UCI.
+ */
+
 #ifdef HAVE_CONFIG_H
 #include <config.h>
 #endif
@@ -221,6 +244,7 @@ net_usershare_run(int argcomando, char **argverbose, GKeyFile **ret_key_file, GE
 
 
                 if (!g_key_file_load_from_data(key_file, stdout_contents, -1, 0, &real_error)) {
+
                     //g_message ("Error when parsing key file {\n%s\n}: %s", stdout_contents, real_error->message);
 
                     g_propagate_error(error, real_error);
@@ -364,7 +388,7 @@ copy_share_info(ShareInfo *info) {
     copy->guest_ok = strdup(info->guest_ok);
     //printf("INFO Guest OK es %s \n", info->guest_ok);
 
-    //Copiar una lista
+    //Copy List
     copy->rules = rule_copy_deep(info->rules);
 
     //printf("Terminada copia Cant: %d \n", rule_length(copy->rules));
@@ -374,7 +398,8 @@ copy_share_info(ShareInfo *info) {
 
 static void
 add_key_group_to_hashes(GKeyFile *key_file, const char *share_name) {
-    g_message ("Add_key_group_hashes() start \n ");
+
+    //g_message ("Add_key_group_hashes() start \n ");
 
     char *path;
     char *comment;
@@ -422,7 +447,7 @@ add_key_group_to_hashes(GKeyFile *key_file, const char *share_name) {
 
     if (acl) {
 
-        char delim[] = "\\:,";
+        char delimitador[] = "\\:,";
         char *token;
         gboolean local_user = FALSE;
 
@@ -435,7 +460,7 @@ add_key_group_to_hashes(GKeyFile *key_file, const char *share_name) {
 
         permission="";
 
-        for (token = strtok(acl, delim); token; token = strtok(NULL, delim)) {
+        for (token = strtok(acl, delimitador); token; token = strtok(NULL, delimitador)) {
 
             // printf("Token dato = %s \n", token);
 
@@ -505,7 +530,7 @@ add_key_group_to_hashes(GKeyFile *key_file, const char *share_name) {
         if (strcmp(guest_ok_str, "y") == 0) {
 
             rules = rule_add_data(GUEST_USER, strcmp(guest_ok, "read") == 0 ? "r" : "f", rules);
-            //guest_ok = guest_ok; //El valor ya fue obtenido anteriormente en acl.
+            //guest_ok = guest_ok; //El valor es obtenido anteriormente en acl.
 
         } else {
 
@@ -524,8 +549,6 @@ add_key_group_to_hashes(GKeyFile *key_file, const char *share_name) {
 
     g_assert (path != NULL);
     g_assert (share_name != NULL);
-
-    //Creando un objeto  liberar toda la memoria
 
     info = g_new (ShareInfo, 1);
 
@@ -817,7 +840,7 @@ add_share(ShareInfo *info, GError **error) {
 
     add_share_info_to_hashes(copy);
 
-    g_message ("ADD_share() end SUCCESS");
+    // g_message ("ADD_share() end SUCCESS");
 
     return TRUE;
 }

@@ -64,5 +64,7 @@ typedef struct {
 
     gboolean is_modified;  //si los parámetros de la ventana de propiedades cambian se activa
 
+    char *old_user;
+
 } PropertyPage;
 #endif //SHARE_PROPERTY_PAGE_CLASS_H

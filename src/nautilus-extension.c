@@ -1,6 +1,25 @@
-//
-// Created by ghost on 2/23/17.
-//
+/* nautilus-share -- Nautilus File Sharing Extension
+ *
+ * Sebastien Estienne <sebastien.estienne@gmail.com>
+ * Aldy Leon Garcia <aldyl@nauta.cu>
+ *
+ * This program is free software; you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation; either version 2 of the License, or
+ * (at your option) any later version.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with this program; if not, write to the Free Software
+ * Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA.
+ *
+ * (C) Copyright 2005 Ethium, Inc.
+ * (C) Copyright 2017 UCI.
+ */
 
 #ifdef HAVE_CONFIG_H
 #include <config.h>
@@ -16,14 +35,12 @@
 #include <glib/gi18n-lib.h>
 #include <stdlib.h>
 
-//Todas las clases del proyecto
+//Proyect all class
 #include "shares.h"
 #include "property-page.h"
-#include "nautilus-info-provider.h"
 
 #include "nautilus-extension.h"
-
-#include <locale.h>
+#include "nautilus-info-provider.h"
 
 GObjectClass *parent_class;
 
@@ -59,7 +76,6 @@ nautilus_share_get_file_items(NautilusMenuProvider *provider,
     gboolean is_shareable;
 
     /* Only show the property page if 1 file is selected */
-    //Files es una lista enlazada
     if (!files || files->next != NULL) {
         return NULL;
     }
@@ -93,7 +109,7 @@ nautilus_share_get_file_items(NautilusMenuProvider *provider,
                            g_object_unref);
 
     /* Release our reference when the menu item goes away */
-   // g_message ("Info for File Items List() start");
+    // g_message ("Info for File Items List() start");
     items = g_list_append(NULL, item);
     //g_message ("Info for File Items List() ok");
     return items;
@@ -118,6 +134,7 @@ nautilus_share_info_provider_iface_init(NautilusInfoProviderIface *iface) {
  * that can be unloaded, we separate type registration from get_type().
  * the type_register() function will be called by the module's
  * initialization function. */
+
 GType share_type = 0;
 
 #define NAUTILUS_TYPE_SHARE  (nautilus_share_get_type ())
@@ -209,7 +226,6 @@ nautilus_share_register_type(GTypeModule *module) {
 void
 nautilus_module_initialize(GTypeModule *module) {
     //  g_print ("Initializing nautilus-share extension\n");
-    setlocale(LC_ALL, "");
     bindtextdomain("nautilus-share", NAUTILUS_SHARE_LOCALEDIR);
     bind_textdomain_codeset("nautilus-share", "UTF-8");
 

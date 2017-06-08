@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: nautilus-share.HEAD\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-04-04 11:38-0400\n"
+"POT-Creation-Date: 2017-05-26 19:25-0400\n"
 "PO-Revision-Date: 2012-03-26 19:58+0200\n"
 "Last-Translator: Khaled Hosny <khaledhosny@eglug.org>\n"
 "Language-Team: Arabic <doc@arabeyes.org>\n"
@@ -21,72 +21,72 @@ msgstr ""
 "&& n%100<=10 ? 3 : n%100>=11 ? 4 : 5;\n"
 "X-Generator: Virtaal 0.7.0\n"
 
-#: ../src/installSamba.c:55
+#: ../src/installSamba.c:74
 msgid "Restart your session"
 msgstr ""
 
-#: ../src/installSamba.c:58
+#: ../src/installSamba.c:77
 msgid "You need to restart your session in order to enable sharing."
 msgstr ""
 
-#: ../src/installSamba.c:59
+#: ../src/installSamba.c:78
 msgid "Restart session"
 msgstr ""
 
-#: ../src/installSamba.c:163
+#: ../src/installSamba.c:182
 msgid "Sharing service installation failed"
 msgstr ""
 
-#: ../src/installSamba.c:167
+#: ../src/installSamba.c:186
 msgid ""
 "Sharing service installation has failed. Would you like to retry the "
 "installation?"
 msgstr ""
 
-#: ../src/installSamba.c:171
+#: ../src/installSamba.c:190
 msgid "Retry"
 msgstr ""
 
-#: ../src/installSamba.c:207
+#: ../src/installSamba.c:226
 msgid "Sharing service is not installed"
 msgstr ""
 
-#: ../src/installSamba.c:209
+#: ../src/installSamba.c:228
 msgid ""
 "You need to install the Windows networks sharing service in order to share "
 "your folders."
 msgstr ""
 
-#: ../src/installSamba.c:211
+#: ../src/installSamba.c:230
 msgid "Install service"
 msgstr ""
 
-#: ../src/nautilus-extension.c:41
+#: ../src/nautilus-extension.c:58
 msgid "Folder Sharing"
 msgstr "مشاركة المجلدات"
 
-#: ../src/nautilus-extension.c:83
+#: ../src/nautilus-extension.c:99
 #, fuzzy
 msgid "Share with Windows users"
 msgstr "شارك هذا المجلّد"
 
-#: ../src/nautilus-extension.c:84
+#: ../src/nautilus-extension.c:100
 msgid "Share this Folder"
 msgstr "شارك هذا المجلّد"
 
-#: ../src/nautilus-permissions.c:186
+#: ../src/nautilus-permissions.c:206
 #, c-format
 msgid "Could not change the permissions of folder \"%s\""
 msgstr "تعذّر تغيير صلاحيات المجلد \"%s\""
 
-#: ../src/nautilus-permissions.c:214
+#: ../src/nautilus-permissions.c:234
 #, c-format
 msgid ""
 "Nautilus needs to add some permissions to your folder \"%s\" in order to "
 "share it"
 msgstr "يحتاج نوتلس لإضافة بعض الصلاحيات للمجلد \"%s\" لكي تتم مشاركته"
 
-#: ../src/nautilus-permissions.c:220
+#: ../src/nautilus-permissions.c:240
 #, c-format
 msgid ""
 "The folder \"%s\" needs the following extra permissions for sharing to "
@@ -97,31 +97,31 @@ msgstr ""
 "المجلد \"%s\" يحتاج إلى الصلاحيات الإضافية الآتية لتتم مشاركته:\n"
 "%s%s%s ، هل تريد من نوتلس إضافة هذه الصلاحيات للمجلد آليا؟"
 
-#: ../src/nautilus-permissions.c:225
+#: ../src/nautilus-permissions.c:245
 #, fuzzy
 msgid "  - read permission by group/other\n"
 msgstr " - صلاحية القراءة من الآخرين\n"
 
-#: ../src/nautilus-permissions.c:227
+#: ../src/nautilus-permissions.c:247
 #, fuzzy
 msgid "  - write permission by group/other\n"
 msgstr " - صلاحية الكتابة من الآخرين\n"
 
-#: ../src/nautilus-permissions.c:229
+#: ../src/nautilus-permissions.c:249
 #, fuzzy
 msgid "  - execute permission by group/other\n"
 msgstr " - صلاحية التنفيذ من الآخرين\n"
 
-#: ../src/nautilus-permissions.c:233
+#: ../src/nautilus-permissions.c:253
 msgid "Add the permissions automatically"
 msgstr "أضف الصلاحيات آليا"
 
-#: ../src/property-page.c:56
+#: ../src/property-page.c:78
 #, c-format
 msgid "The user %s has not registered to the Samba Server."
 msgstr ""
 
-#: ../src/property-page.c:61
+#: ../src/property-page.c:83
 #, c-format
 msgid ""
 " Ask your administrator to add new user to the Samba Server. \n"
@@ -131,186 +131,192 @@ msgid ""
 " %s"
 msgstr ""
 
-#: ../src/property-page.c:63 ../src/property-page.c:91
-#: ../src/property-page.c:120
+#: ../src/property-page.c:85 ../src/property-page.c:114
+#: ../src/property-page.c:143
 msgid ""
 "<b> Always restart the user session after performing one of these actions.</"
 "b> "
 msgstr ""
 
-#: ../src/property-page.c:83
+#: ../src/property-page.c:106
 #, c-format
 msgid "Permission denied for %s."
 msgstr ""
 
-#: ../src/property-page.c:88
+#: ../src/property-page.c:111
 #, c-format
 msgid ""
 "You do not have permission to create a usershare. \n"
 "\n"
 " %s \n"
 "\n"
-" %s %s \n"
+" %s %s sambashare \n"
 "\n"
 " %s"
 msgstr ""
 
-#: ../src/property-page.c:89 ../src/property-page.c:109
+#: ../src/property-page.c:112 ../src/property-page.c:132
 msgid ""
 "Ask your administrator to grant you permissions to create a shared folder."
 msgstr ""
 
-#: ../src/property-page.c:90
+#: ../src/property-page.c:113
 msgid ""
 "<b>Suggestion:</b> \n"
-" sudo usermod -a -G sambashare "
+" sudo adduser"
 msgstr ""
 
-#: ../src/property-page.c:114
+#: ../src/property-page.c:137
 #, c-format
 msgid ""
-"Instructions for sharing directories with Nautilus-Share. \n"
+"Instructions for sharing directories with Nautilus-Share.\n"
 "\n"
 "%s \n"
 "%s \n"
 "\n"
 "%s \n"
-"%s \n"
+"%s sambashare \n"
 "\n"
 "%s \n"
 "%s"
 msgstr ""
 
-#: ../src/property-page.c:116
+#: ../src/property-page.c:139
 msgid "<b>Add new user to SAMBA server:</b>"
 msgstr ""
 
-#: ../src/property-page.c:117
+#: ../src/property-page.c:140
 msgid "    sudo smbpasswd -a <i>your_username</i>"
 msgstr ""
 
-#: ../src/property-page.c:118
+#: ../src/property-page.c:141
 msgid "<b>Add new user to sambashare group:</b>"
 msgstr ""
 
-#: ../src/property-page.c:119
-msgid "    sudo usermod -a -G sambashare  <i>your_username</i> "
+#: ../src/property-page.c:142
+msgid "    sudo adduser <i>your_username</i> "
 msgstr ""
 
-#: ../src/property-page.c:121
+#: ../src/property-page.c:144
 msgid ""
-"<big>Sharing with guest users without a password is available \n"
-" if specified in the Samba configuration.</big> "
+"Sharing with guest users without a password is available \n"
+" if specified in the Samba configuration. "
 msgstr ""
 
-#: ../src/property-page.c:478
+#: ../src/property-page.c:664
 #, fuzzy
 msgid "Share users"
 msgstr "شارك هذا المجلّد"
 
-#: ../src/property-page.c:490
+#: ../src/property-page.c:684
 msgid "Can write?"
 msgstr ""
 
 #. Apply button
-#: ../src/property-page.c:689 ../src/property-page.c:1156
+#: ../src/property-page.c:885 ../src/property-page.c:1510
 msgid "Modify _Share"
 msgstr "_عدّل المُشاركة"
 
 #. Apply button
-#: ../src/property-page.c:689 ../src/property-page.c:1170
+#: ../src/property-page.c:886 ../src/property-page.c:1525
 msgid "Create _Share"
 msgstr "أنشئ مُشاركة"
 
-#: ../src/property-page.c:735
+#: ../src/property-page.c:1003
 msgid "The share name cannot be empty"
 msgstr "لا يمكن أن يكون اسم المُشاركة فارغا"
 
-#: ../src/property-page.c:743
+#: ../src/property-page.c:1013
 msgid "Very long name to maintain compatibility  between systems."
 msgstr ""
 
-#: ../src/property-page.c:763
+#: ../src/property-page.c:1035
 #, c-format
 msgid "Error while getting share information: %s"
 msgstr "حدث خطأ أثناء جلب معلومات المشاركة: %s"
 
-#: ../src/property-page.c:776
+#: ../src/property-page.c:1050
 msgid "Another share has the same name"
 msgstr "يوجد مسبقًا مُشاركة بنفس الاسم"
 
-#: ../src/property-page.c:1051
+#: ../src/property-page.c:1080
+msgid ""
+"The Samba server service is not active \n"
+" or is being blocked by a firewall."
+msgstr ""
+
+#: ../src/property-page.c:1373
 msgid "There was an error while getting the sharing information"
 msgstr "حدث خطأ أثناء جلب معلومات المشاركة"
 
-#: ../src/property-page.c:1317
+#: ../src/property-page.c:1709
 msgid "Local Network Share"
 msgstr ""
 
-#: ../src/shares.c:46
+#: ../src/shares.c:69
 msgid "guest"
 msgstr ""
 
-#: ../src/shares.c:145
+#: ../src/shares.c:168
 #, c-format
 msgid "%s %s %s returned with signal %d"
 msgstr "%s %s %s رجع بالإشارة %d"
 
-#: ../src/shares.c:154
+#: ../src/shares.c:177
 #, c-format
 msgid "%s %s %s failed for an unknown reason"
 msgstr "%s %s %s فشل لأسباب مجهولة"
 
-#: ../src/shares.c:174
+#: ../src/shares.c:197
 #, c-format
 msgid "'net usershare' returned error %d: %s"
 msgstr "ارجع 'net usershare' خطأ %Id:‏ %s"
 
-#: ../src/shares.c:176
+#: ../src/shares.c:199
 #, c-format
 msgid "'net usershare' returned error %d"
 msgstr "ارجع 'net usershare' خطأ %Id"
 
-#: ../src/shares.c:210
+#: ../src/shares.c:233
 #, c-format
 msgid "the output of 'net usershare' is not in valid UTF-8 encoding"
 msgstr "مخرج 'net usershare' ليس نص UTF-8 صالح"
 
-#: ../src/shares.c:460
+#: ../src/shares.c:485
 msgid "Not valid user"
 msgstr ""
 
-#: ../src/shares.c:586 ../src/shares.c:743
+#: ../src/shares.c:609 ../src/shares.c:766
 #, c-format
 msgid "Failed"
 msgstr "فشل"
 
-#: ../src/shares.c:676
+#: ../src/shares.c:699
 #, c-format
 msgid "Samba's testparm returned with signal %d"
 msgstr "أرجع testparm من سامبا الإشارة %Id"
 
-#: ../src/shares.c:682
+#: ../src/shares.c:705
 #, c-format
 msgid "Samba's testparm failed for an unknown reason"
 msgstr "فشل testparm من سامبا لأسباب مجهولة"
 
-#: ../src/shares.c:697
+#: ../src/shares.c:720
 #, c-format
 msgid "Samba's testparm returned error %d: %s"
 msgstr "أرجع testparm من سامبا الخطأ %Id:‏ %s"
 
-#: ../src/shares.c:699
+#: ../src/shares.c:722
 #, c-format
 msgid "Samba's testparm returned error %d"
 msgstr "أرجع testparm من سامبا الخطأ %Id"
 
-#: ../src/shares.c:850
+#: ../src/shares.c:873
 #, c-format
 msgid "Cannot remove the share for path %s: that path is not shared"
 msgstr "تعذّر حذف مُشاركة المسار %s: المسار غير مشارك"
 
-#: ../src/shares.c:895
+#: ../src/shares.c:918
 #, c-format
 msgid ""
 "Cannot change the path of an existing share; please remove the old share "
@@ -320,7 +326,7 @@ msgstr ""
 
 #: ../interfaces/share-dialog.ui.h:1
 #, fuzzy
-msgid "<big><b>_Share this Directory</b></big>"
+msgid "<big><b>Samba Server Status</b></big>"
 msgstr "<big><b>مشاركة المجلدات</b></big>"
 
 #: ../interfaces/share-dialog.ui.h:2
